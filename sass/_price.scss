@@ -1,0 +1,240 @@
+// ******************************
+//price.scss
+// ******************************
+#price_detail {
+  margin: 4em 0;
+  .price_inner {
+    @include grobal_inr;
+    section {
+      margin-bottom: 4.5em;
+    }
+    h2{
+      @include fz(20);
+      font-weight: bold;
+      margin-bottom: 30px;
+      position: relative;
+      &:before{
+        content: "";
+        width: 40px;
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 80px;
+        border-top: 1px solid #262626;
+      }
+    }
+    .content_1 {
+      >p {
+        margin-bottom: 1em;
+        @include fz(14);
+        font-weight: normal;
+      }
+      .view_btn{
+        width: 200px;
+        text-align: center;
+        margin-bottom: 2.5em;
+      }
+      article {
+        position: relative;
+        margin-bottom: 4em;
+        h3 {
+          color: #262626;
+          background: #eef9ff;
+          font-weight: bold;
+          padding: 1.2%;
+        }
+        figure {
+            position: absolute;
+            width: 330px;
+            right: 60px;
+            top: -50px;
+          img {
+            width: 100%;
+          }
+          @include mq(tb) {
+            top: -1%;
+            width: 250px;
+          }
+          @include mq(sp) {
+            width: 40%;
+            right: 0;
+            top: 0;
+          }
+        }
+        ul.detail {
+          @include fz(13);
+          display: inline-block;
+          line-height: 1.8;
+          li {
+            position: relative;
+            padding-left: 24px;
+            span{
+              @include fz(10);
+              vertical-align: top;
+              margin-left: .3em;
+            }
+            &:before {
+              content: '';
+              background: url(../images/price_check.svg);
+              height: 15px;
+              width: 15px;
+              position: absolute;
+              top: 5px;
+              left: 0;
+            }
+          }
+        }
+        ul.caution {
+          @include fz(12);
+          display: inline-block;
+          line-height: 1.8;
+          color: #676767;
+          margin-top: .5em;
+          li{
+            &:before {
+              content: '・';
+            }
+          }
+        }
+        p.price {
+          @include fz(28);
+          font-weight: bold;
+          margin-top: .2em;
+          @include mq(sptb) {
+            margin-top: 1em;
+          }
+          span {
+            @include fz(14);
+            margin-right: 10px;
+            font-weight: normal;
+          }
+          small {
+            @include fz(12);
+          }
+        }
+        
+        .plan_table_1,
+        .plan_table_2
+        {
+          width: 800px;
+          margin-top: 1.5em;
+          @include mq(sptb) {
+            width: 100%;
+          }
+          dl {
+            display: flex;
+            border-bottom: 1px solid #e6e6e6;
+            border-left: 1px solid #e6e6e6;
+            @include fz(13);
+            text-align: left;
+            color: #262626;
+            &:first-child{
+              border-top: 1px solid #e6e6e6;
+            }
+            dt,dd {
+              padding: 2%;
+            }
+            dt {
+              background: #f5f5f5;
+              font-weight: bold;
+              @include mq(sptb) {
+                width: 45%;
+              } 
+            }
+            dd {
+              border-right: 1px solid #e6e6e6;
+              @include mq(sptb) {
+                width: 28%;
+                text-align: center;
+              }
+            }
+          }
+        }
+        .plan_table_1 {
+          dt,dd {
+            width: 33.333%;
+          }
+        }
+        .plan_table_2 {
+          dt,dd {
+            width: 50% !important;
+          }
+        }
+      }
+    }
+    #table{
+      width: 100%;
+      thead {
+        th {
+          background: #605e5e;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+      td,th {
+        padding: 1%;
+        @include fz(14);
+        border: 1px solid #ccc;
+        vertical-align: top;
+      }
+      th {
+        font-weight: bold;
+      }
+      @include mq(sp) {
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+        tr {
+          display: block;
+          margin-bottom: 1.2em;
+          border-top: 1px solid #ccc;
+        }
+        thead {
+          display: none;
+        }
+        td,th {
+          display: list-item;
+          border: none;
+        }
+        th {
+          list-style-type: none;
+          padding: 2%;
+          color: #fff;
+          background: #000;
+          font-size: 3.2vw;
+        }
+        td {
+          padding: 0;
+          border-bottom: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          white-space: nowrap;
+          word-break: break-word;
+          &:before {
+            display: inline-block;
+            width: 30%;
+            background: #ededed;
+            padding: 2%;
+            margin-right: 2%;
+          }
+          &:nth-of-type(1):before {
+            content: 'カテゴリ';
+          }
+          &:nth-of-type(2):before {
+            content: '項目';
+          }
+          &:nth-of-type(3):before {
+            content: '対応範囲';
+          }
+          &:nth-of-type(4):before {
+            content: '作業工数';
+          }
+          &:nth-of-type(4):before {
+            content: '御見積単価';
+          }
+        }
+      }
+    }
+  }
+}

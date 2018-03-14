@@ -1,0 +1,35 @@
+// ******************************
+//privacy.scss
+// ******************************
+
+#privacy {
+	margin-bottom: 100px;
+	.privacyList {
+		.privacyList_inr {
+			@include grobal_inr;
+			line-height: 1.6;
+			
+			.privacyList_inr_item {
+				border-bottom: 1px solid #d9d9d9;
+				padding: 25px 0;
+				h4 {
+					@include fz(16);
+					margin-bottom: 5px;
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+			.privacyList_inr_caution {
+				background: #eee;
+				padding: 20px;
+				margin-top: 40px;
+				p {
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
