@@ -1,5 +1,11 @@
 <?php
 
+
+//グローバル変数定義　石川・金沢
+
+$place = "石川";
+$city = "金沢";
+
 //画像サイズ
 if ( function_exists( 'add_image_size' ) ) {
   //add_image_size( 'custom_size',134,134, true );

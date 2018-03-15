@@ -11,7 +11,7 @@
         <ul>
           <li><a href="<?php echo home_url(); ?>">トップ</a>
             <ul>
-              <li><a href="<?php echo home_url(); ?>#lead">金沢ホームページ制作.COMとは</a></li>
+              <li><a href="<?php echo home_url(); ?>#lead"><?php echo $city; ?>ホームページ制作.COMとは</a></li>
               <li><a href="<?php echo home_url(); ?>#concept">選ばれる３つの理由</a></li>
               <li><a href="<?php echo home_url(); ?>#reason">私たちの強み</a></li>
               <li><a href="<?php echo home_url(); ?>#contents">選べるコンテンツ</a></li>

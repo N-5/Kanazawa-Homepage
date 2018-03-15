@@ -1,6 +1,6 @@
 <section id="nav" class="global_nav re">
 	<ul>
-      <h1>金沢ホームページ制作.COM</h1>
+      <h1><?php echo $city; ?>ホームページ制作.COM</h1>
       <li><a href="<?php echo home_url(); ?>#top">トップ</a><ul><li><span>低価格</span>で<span>高品質</span>なサイトをご提供いたします！</li></ul></li>
       <li><a href="<?php echo home_url(); ?>/news/">ニュース</a>
         <ul class="col4">
