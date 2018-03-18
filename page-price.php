@@ -76,85 +76,226 @@ Template Name: price
 </div>
   <section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
   <?php include_once("nav.php"); ?>
+  <section class="m_ttlArea_1">
+ <div id="breadcrumb">
+  <ul>
+    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+    <li>&gt;</li>
+    <li>価格について</li>
+  </ul>
+</div>
+  <h1>PRICE<span>価格</span></h1>
+</section>
 	<div id="price_detail">
       <div class="price_inner">
         <section class="content_1">
           <h2>制作プラン</h2>
-          <p>KANAZAWA HOPMEPAGE.comがご提案させていただく制作プランをご紹介します。</p>
-          <div class="view_btn"><a id="modal-open" class="arrow">お支払いについて</a></div>
+          <p>
+          KANAZAWA HOPMEPAGE.comが自信をもってご提案させていただく制作プランをご紹介します。<br>
+          新規サイト制作、WEBサイトリニューアルなど誠意をもって解決させていただきます。<br>
+          WEBの知識がなくご不安な方もお問い合わせフォームよりお気軽にご相談ください。
+          </p>
+          <div class="btnArea">
+            <div class="view_btn"><a id="modal-open" class="arrow">お支払いについて</a></div>
+            <div class="view_btn more"><a href="#option" class="arrow">オプションについて</a></div>
+          </div>
           <article>
-            <h3>シンプルプラン</h3>
-            <p class="price"><span>初期費用</span>388,000 <small>円</small></p>
+            <h3 class="h3_1">創業プラン</h3>
+            <p class="price"><span>初期費用</span>49,800<small>円</small></p>
+            <p class="caption">12個のメニューから6個を選択を自由に組み合わせ目的にあった1ページのサイトを制作。<br>創業者様ご愛用いただいているプランです。<br><a href="<?php echo home_url(); ?>#contents">メニューについてはこちら</a></p>
             <ul class="detail">
               <li>簡単に更新ができるCMS(WordPress)で構築</li>
               <li>iPhoneなどのスマホにも対応</li>
-              <li>万全なSEO対策</li>
-              <li>追加オプションも可能<span>※1</span></li>
+              <li>ホームページをはじめてお作りなりたい方にオススメ</li>
             </ul>
-            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan1_img.png" alt="シンプルプラン"></figure>
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan1_img.png" alt="創業プラン"></figure>
             <div class="plan_table_1">
-              <dl><dt>デザインTOP</dt><dd>1P</dd><dd>60,000円</dd></dl>
-              <dl><dt>デザイン下層</dt><dd>4P</dd><dd>80,000円</dd></dl>
-              <dl><dt>コーディングTOP</dt><dd>1P</dd><dd>60,000円</dd></dl>
-              <dl><dt>コーディング</dt><dd>4P</dd><dd>80,000円</dd></dl>
-              <dl><dt>基礎構築</dt><dd>1式</dd><dd>20,000円</dd></dl>
-              <dl><dt>お知らせ／NEWS（カテゴリなし）</dt><dd>-</dd><dd>10,000円</dd></dl>
-              <dl><dt>ブログ（サムネイル表示あり・カテゴリあり）</dt><dd>-</dd><dd>18,000円</dd></dl>
-              <dl><dt>お問い合わせフォーム（確認・完了ページあり）</dt><dd>-</dd><dd>60,000円</dd></dl>
+              <dl><dt>制作期間</dt><dd>30日</dd></dl>
+              <dl><dt>ページ数</dt><dd>1P<small>※1</small></dd></dl>
+              <dl><dt>デザイン</dt><dd>1案<small>※2</small></dd></dl>
+              <dl><dt>スマホ対応</dt><dd>◯</dd></dl>
+              <dl><dt>写真素材</dt><dd>お客様支給または画像素材<small>※3</small></dd></dl>
+              <dl><dt>テキスト</dt><dd>フォーマットを弊社でご用意<small>※4</small></dd></dl>
+              <dl><dt>SEO対策</dt><dd>◯</dd></dl>
+              <dl><dt>WordPress</dt><dd>◯</dd></dl>
+              <dl><dt>アクセス解析</dt><dd>◎</dd></dl>
+              <dl><dt>Search Console</dt><dd>◎</dd></dl>
+              <dl><dt>ドメイン</dt><dd>初期費用に含む</dd></dl>
+              <dl><dt>サーバー</dt><dd>◯</dd></dl>
+              <dl><dt>メールアドレス</dt><dd>2個まで<small>※5</small></dd></dl>
             </div>
             <ul class="caution">
-              <li>テキストはお客様側でご準備ください</li>
-              <li>お客様支給またはデザイン時に写真素材にて弊社から提案いたします。</li>
-              <li>写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。</li>
-              <li>※別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※1 提示しているページ以上の追加はオプションとなります。<a href="#option">オプションについて</a></li>
+              <li>※2 デザイン調整はオプションとなります。</li>
+              <li>※3 写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。<br>
+              別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※4 テキストはお客様側でご準備ください。フォーマットを弊社でご用意いたしますので、そちらの形式にしたがってご記入いただきます。</li>
+              <li>※5 メールアドレスの設定は初期設定のみとなります。追加についてはご相談ください。</li>
+              <li>※ サーバー・ドメイン・メールアドレスの管理費は月々9,000円（＋税）となります。</li>
             </ul>
+            <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
           </article>
           <article>
-            <h3>開業プラン</h3>
-            <p class="price"><span>制作費用</span>49,800<small>円</small></p>
+            <h3 class="h3_2">LPプラン</h3>
+            <p class="price"><span>初期費用</span>180,000<small>円</small></p>
+            <p class="caption">
+              商品やサービスのアピールに特化したLPページを１からデザインし、制作いたします。<br>
+              リスティング広告の有資格者が広告ランク・品質スコア・広告関連性などを意識した制作をご提案をいたします。
+            </p>
+            <ul class="detail">
+              <li>完全オリジナルデザインのランディングページ</li>
+              <li>iPhoneなどのスマホにも対応</li>
+              <li>充実したSEO対策</li>
+            </ul>
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan2_img.png" alt="LPプラン"></figure>
+            <div class="plan_table_1">
+              <dl><dt>制作期間</dt><dd>45日</dd></dl>
+              <dl><dt>ページ数</dt><dd>1P<small>※1</small></dd></dl>
+              <dl><dt>デザイン</dt><dd>◎</dd></dl>
+              <dl><dt>スマホ対応</dt><dd>自動対応</dd></dl>
+              <dl><dt>写真素材</dt><dd>お客様支給または画像素材<small>※2</small></dd></dl>
+              <dl><dt>テキスト</dt><dd>フォーマットを弊社でご用意<small>※3</small></dd></dl>
+              <dl><dt>SEO対策</dt><dd>◯</dd></dl>
+              <dl><dt>WordPress</dt><dd>◯</dd></dl>
+              <dl><dt>アクセス解析</dt><dd>◎</dd></dl>
+              <dl><dt>Search Console</dt><dd>◎</dd></dl>
+            </div>
+            <ul class="caution">
+              <li>※1 ページの長さが8129pxを超える場合は追加費用がかかる場合がございます。</li>
+              <li>※2 写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。<br>
+              別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※3 テキストはお客様側でご準備ください。フォーマットを弊社でご用意いたしますので、そちらの形式にしたがってご記入いただきます。</li>
+            </ul>
+            <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
+          </article>
+          <article>
+            <h3 class="h3_3">シンプルプラン</h3>
+            <p class="price"><span>初期費用</span>388,000<small>円</small></p>
+            <p class="caption">
+             トップを含め５ページを制作。本格的なホームページが制作できます。<br>
+             アクセス解析ツール設置といった要点をしっかり抑え制作を行いますので競合他社より上位表示したい！<br>
+             といった方におすすめのプランです。
+            </p>
             <ul class="detail">
               <li>簡単に更新ができるCMS(WordPress)で構築</li>
               <li>iPhoneなどのスマホにも対応</li>
-              <li>万全なSEO対策</li>
-              <li>追加オプションも可能<span>※1</span></li>
+              <li>充実したSEO対策</li>
             </ul>
-            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan1_img.png" alt="シンプルプラン"></figure>
-            <div class="plan_table_2">
-              <dl><dt>デザイン</dt><dd>1案</dd></dl>
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan3_img.png" alt="シンプルプラン"></figure>
+            <div class="plan_table_1">
               <dl><dt>制作期間</dt><dd>30日</dd></dl>
-              <dl><dt>ページ数</dt><dd>1P+α</dd></dl>
+              <dl><dt>ページ数</dt><dd>5P<small>※1</small></dd></dl>
+              <dl><dt>デザイン</dt><dd>1案<small>※2</small></dd></dl>
+              <dl><dt>スマホ対応</dt><dd>◯</dd></dl>
+              <dl><dt>写真素材</dt><dd>お客様支給または画像素材<small>※3</small></dd></dl>
+              <dl><dt>テキスト</dt><dd>フォーマットを弊社でご用意<small>※4</small></dd></dl>
+              <dl><dt>SEO対策</dt><dd>◯</dd></dl>
+              <dl><dt>WordPress</dt><dd>◯</dd></dl>
+              <dl><dt>アクセス解析</dt><dd>◎</dd></dl>
+              <dl><dt>Search Console</dt><dd>◎</dd></dl>
+              <dl><dt>ドメイン</dt><dd>初期費用に含む</dd></dl>
+              <dl><dt>サーバー</dt><dd>◯</dd></dl>
+              <dl><dt>メールアドレス</dt><dd>2個まで<small>※5</small></dd></dl>
             </div>
             <ul class="caution">
-              <li>テキストはお客様側でご準備ください</li>
-              <li>原稿について、フォーマットを弊社でご用意いたしますので、そちらの形式にしたがってご記入ください。</li>
-              <li>写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。</li>
-              <li>スマホ対応について、自動対応デザイン調整のご希望はオプションにて対応いたします</li>
-              <li>※別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※1 提示しているページ以上の追加はオプションとなります。<a href="#option">オプションについて</a></li>
+              <li>※2 修正内容によってはオプションとなる場合がございます。</li>
+              <li>※3 写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。<br>
+              別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※4 テキストはお客様側でご準備ください。フォーマットを弊社でご用意いたしますので、そちらの形式にしたがってご記入いただきます。</li>
+              <li>※5 メールアドレスの設定は初期設定のみとなります。追加についてはご相談ください。</li>
+              <li>※ サーバー・ドメイン・メールアドレスの管理費は月々9,000円（＋税）となります。</li>
             </ul>
+            <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
           </article>
           <article>
-            <h3>LPプラン</h3>
-            <p class="price"><span>制作費用</span>180,000<small>円</small></p>
+            <h3 class="h3_4">ゴールドプラン</h3>
+            <p class="price"><span>初期費用</span>628,000<small>円</small></p>
+            <p class="caption">
+             会社の看板としてビジネスゴールを製作段階に設計させていただき、有効的な機能を実装したホームページ制作致します。<br>
+             お客様に書いていただいた原稿をSEOに合わせて修正を行うことでWeb集客を行うことができるホームページ制作プランです。
+            </p>
             <ul class="detail">
+              <li>オリジナルデザインのホームページ</li>
+              <li>簡単に更新ができるCMS(WordPress)で構築</li>
               <li>iPhoneなどのスマホにも対応</li>
-              <li>万全なSEO対策</li>
-              <li>追加オプションも可能<span>※1</span></li>
+              <li>万全なSEO対策、アナリティクスレポート</li>
+              <li>コンテンツSEOサービスつき</li>
             </ul>
-            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan1_img.png" alt="シンプルプラン"></figure>
-            <div class="plan_table_2">
-              <dl><dt>デザイン</dt><dd>1案</dd></dl>
-              <dl><dt>制作期間</dt><dd>45日</dd></dl>
-              <dl><dt>ページ数</dt><dd>1P</dd></dl>
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan4_img.png" alt="ゴールドプラン"></figure>
+            <div class="plan_table_1">
+              <dl><dt>制作期間</dt><dd>90日</dd></dl>
+              <dl><dt>ページ数</dt><dd>8P<small>※1</small></dd></dl>
+              <dl><dt>デザイン</dt><dd>TOPのみ2案</dd></dl>
+              <dl><dt>スマホ対応</dt><dd>◎</dd></dl>
+              <dl><dt>写真素材</dt><dd>お客様支給または画像素材<small>※2</small></dd></dl>
+              <dl><dt>テキスト</dt><dd>フォーマットを弊社でご用意<small>※3</small></dd></dl>
+              <dl><dt>SEO対策</dt><dd>◯</dd></dl>
+              <dl><dt>コンテンツSEO</dt><dd>1記事サービス</dd></dl>
+              <dl><dt>WordPress</dt><dd>カスタム可能</dd></dl>
+              <dl><dt>アクセス解析</dt><dd>◎</dd></dl>
+              <dl><dt>Search Console</dt><dd>◎</dd></dl>
+              <dl><dt>ドメイン</dt><dd>初期費用に含む</dd></dl>
+              <dl><dt>サーバー</dt><dd>◯</dd></dl>
+              <dl><dt>メールアドレス</dt><dd>20個まで<small>※4</small></dd></dl>
             </div>
             <ul class="caution">
-              <li>原稿について、大まかなレイアウトと原稿をお客さまの方でご準備いただく必要があります。LPの長さによっては追加費用も発生する可能性もございます</li>
-              <li>写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。</li>
-              <li>スマホ対応について、自動対応デザイン調整のご希望はオプションにて対応いたします</li>
-              <li>※別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※1 提示しているページ以上の追加はオプションとなります。<a href="#option">オプションについて</a></li>
+              <li>※2 写真素材について、お客様支給またはデザイン時に写真素材にて弊社から提案いたします。<br>
+              別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※3 ご用途をヒアリングし、SEOに沿った原稿キーワードを提示。最適化したファーマットをご用意しますので、その形式にしたがってご記入ください。</li>
+              <li>※4 メールアドレスの設定は初期設定のみとなります。追加についてはご相談ください。</li>
+              <li>※ サーバー・ドメイン・メールアドレスの管理費は月々9,000円（＋税）となります。</li>
             </ul>
+            <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
           </article>
+          <article>
+            <h3 class="h3_5">ブラックプラン</h3>
+            <p class="price"><span>初期費用</span>1,180,000<small>円</small></p>
+            <p class="caption">
+             専属のWebマーケティング担当者がホームページ制作から、<br>リリース後３ヶ月間Web集客ができるようになるまで立ち上がりの運用をサポートし、<br>SEOに強いコンテンツSEO記事も制作するビジネスコミット型のホームページ制作プランです。
+            </p>
+            <ul class="detail">
+             　<li>トップページ、下層含め10ページを制作</li>
+              <li>運用サポート保証</li>
+              <li>オリジナルデザインのホームページ</li>
+              <li>カテゴリーなどのカスタマイズ投稿にも対応</li>
+              <li>万全なSEO対策、アナリティクスレポート</li>
+              <li>簡単に更新ができるCMS(WordPress)で構築</li>
+              <li>iPhoneなどのスマホにも対応</li>
+            </ul>
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/images/price_detail_plan5_img.png" alt="ブラックプラン"></figure>
+            <div class="plan_table_1">
+              <dl><dt>制作期間</dt><dd>105日</dd></dl>
+              <dl><dt>ページ数</dt><dd>10P<small>※1</small></dd></dl>
+              <dl><dt>デザイン</dt><dd>TOPのみ2案、<br class="sp">スマホTOP1案</dd></dl>
+              <dl><dt>スマホ対応</dt><dd>◎<small>※2</small></dd></dl>
+              <dl><dt>写真素材</dt><dd>お客様支給または画像素材<small>※3</small></dd></dl>
+              <dl><dt>テキスト</dt><dd>弊社提案<small>※4</small></dd></dl>
+              <dl><dt>SEO対策</dt><dd>◯</dd></dl>
+              <dl><dt>コンテンツSEO</dt><dd>3記事サービス</dd></dl>
+              <dl><dt>WordPress</dt><dd>カスタム可能<small>※6</small></dd></dl>
+              <dl><dt>アクセス解析</dt><dd>◎</dd></dl>
+              <dl><dt>Search Console</dt><dd>◎</dd></dl>
+              <dl><dt>ドメイン</dt><dd>初期費用に含む</dd></dl>
+              <dl><dt>サーバー</dt><dd>◯</dd></dl>
+              <dl><dt>メールアドレス</dt><dd>無制限<small>※6</small></dd></dl>
+            </div>
+            <ul class="caution">
+              <li>※1 提示しているページ以上の追加はオプションとなります。<a href="#option">オプションについて</a></li>
+              <li>※2 TOPのデザインにあわせレスポンシブデザインを採用しております。</li>
+              <li>※3 お客様支給またはデザイン時に写真素材にて弊社から提案いたします。<br>別途ご予算にて、写真素材を撮影から承ることも可能です。商品や社屋、人物などを撮影いたします。お気軽にご相談ください。</li>
+              <li>※4 いただいた原稿内容を<span>コンテンツSEOに沿って構築、最適化したものを提案</span>させていただきます。</li>
+              <li>※5 WordPressの投稿をカスタマイズすることが可能です。</li>
+              <li>※6 メールアドレスの設定は初期設定のみとなります。追加についてはご相談ください。</li>
+              <li>※ サーバー・ドメイン・メールアドレスの管理費は月々9,000円（＋税）となります。</li>
+            </ul>
+            <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
+          </article>
+          
+          
         </section>
-        <section class="content_2">
+        <section id="option" class="content_2">
          <h2>個別案件（オプション）</h2>
           <table id="table">
             <thead>

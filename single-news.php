@@ -1,6 +1,18 @@
 <?php get_header(); ?>
   <section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
   <?php include_once("nav.php"); ?>
+<section class="m_ttlArea_1">
+ <div id="breadcrumb">
+  <ul>
+    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+    <li>&gt;</li>
+    <li><a href="<?php echo home_url(); ?>/news">NEWS一覧</a></li>
+    <li>&gt;</li>
+    <li><?php the_title(); ?></li>
+  </ul>
+</div>
+  <h1>NEWS<span>ニュース</span></h1>
+</section>
 	<div id="news_single">
 		<div class="news_single_inr">
 			<?php
@@ -12,16 +24,6 @@
 			?>
 			<section class="post_area">
               <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-              <div id="breadcrumb">
-                <ul>
-                  <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
-                  <li>&gt;</li>
-                  <li><a href="<?php echo home_url(); ?>/news">NEWS一覧</a></li>
-                  <li>&gt;</li>
-                  <li><?php the_title(); ?></li>
-                </ul>
-              </div>
-              <h1>NEWS<span>ニュース</span></h1>
               <div class="post_area_ttl">
                 <h2><?php the_title(); ?><time><span><?php the_time('Y.m.d'); ?></span></time></h2>
                 <ul class="category">

@@ -2,17 +2,25 @@
 //Designed by Masahito nakai
 //Style.scss
 // ******************************
-
 @charset "utf-8";
-@import 'reset';
-@import 'util';
-@import 'base';
-@import 'common';
-@import 'module';
-@import 'layout';
+
+@import 'reset';  //reset style
+@import 'util';   //mixin
+@import 'variation'; //style variation
+@import 'base'; //base style
+
+
+//common layout style
+@import 'common';  //header,footer,navigatin
+@import 'module';  //module
+@import 'layout';  //all page layout
+
+//one page original style
+//if you want to add a page, please append new import scss.
 @import 'top';
 @import 'news';
 @import 'report';
 @import 'privacy';
 @import 'sitemap';
 @import 'price';
+@import 'works';

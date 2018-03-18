@@ -1,11 +1,18 @@
   <?php get_header(); ?>
   <section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
   <?php include_once("nav.php"); ?>
+<section class="m_ttlArea_1">
+ <div id="breadcrumb">
+  <ul>
+    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+    <li>&gt;</li>
+    <li>サイトマップ</li>
+  </ul>
+</div>
+  <h1>SITEMAP<span>サイトマップ</span></h1>
+</section>
   <!-- main -->
   <main id="sitemap" class="content">
-    <section>
-        <div class="ttl"><h3>SITEMAP<span>サイトマップ</span></h3></div>
-    </section>
     <section class="sitemapList">
       <div class="sitemapList_inr">
         <ul>
@@ -39,6 +46,7 @@
                 <?php endwhile; ?>
               </ul>
             </li>
+          <li><a href="<?php echo home_url(); ?>/price/">プラン</a></li>
           <li><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
           <li><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>  
         </ul>

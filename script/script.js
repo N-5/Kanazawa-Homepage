@@ -1,6 +1,4 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
 
 //slider
 $(function() {
@@ -14,20 +12,25 @@ $(function() {
 	});
 });
 $(function() {
-	$('.lead_slider').slick({
+	$('.reason_inr').slick({
 		infinite: true,
+		autoplay:false,
 		dots:true,
-		slidesToShow: 1,
-		centerMode: true,
-		centerPadding:'180px',
-		responsive: [{
-			breakpoint: 426,
-			settings: {
-				centerMode: false,
-			}
-		}]
+        fade:true,
+        pause: 4000,
+		speed: 2000,
+		arrows: false
 	});
 });
+
+$(function(){
+$(".global_nav li").hover(function(){
+    $(this).children('ul').stop().slideDown();
+  }, function(){
+    $(this).children('ul').stop().slideUp();
+  });
+});
+
 $(function() {
 	$('.single_slider').slick({
 		infinite: true
@@ -56,81 +59,46 @@ $(function(){
 	});
 });
 
-//map
-//$(function() {
-//	var h = $('.access_text').height();
-//	$('iframe').css('height',h);
-//	$(window).on('load resize', function(){
-//		var h = $('.access_text').height();
-//		$('iframe').css('height',h);
-//	});
-//});
-//var map;
-//function initMap() {
-//	var mapStyle = [
-//		{
-//			"stylers": [
-//				{ "saturation": -100 }
-//			]
-//		}
-//	];
-//	var mapType = new google.maps.StyledMapType(mapStyle);
-//	map.mapTypes.set('GrayScaleMap', mapType);
-//	map.setMapTypeId('GrayScaleMap');
-//	
-//
-//}
 
 //inview.js
 $(function() {
 	$('section').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-		if(isInView){
-			$(this).stop().addClass('animation');
-		}
-		else{
-		}
-	});
+    if(isInView){
+      $(this).stop().addClass('animation');
+    }
+    else{
+    }
+  });
 });
 $(function() {
     //return
-	$('section.re').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-		if(isInView){
-			$(this).stop().addClass('animation');
-		}
-		else{
-			$(this).stop().removeClass('animation');
-		}
-	});
-});
-
-//画像マウスオーバーアクション
-$(function(){
-	$('a img').hover(function(){
-		$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
-	}, function(){
-		if (!$(this).hasClass('currentPage')) {
-			$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
-		}
-	});
+  $('section.re').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if(isInView){
+      $(this).stop().addClass('animation');
+    }
+    else{
+      $(this).stop().removeClass('animation');
+    }
+  });
 });
 
 
 // SP Slider Navigation
 $(function(){
-	$('#menu_btn').click(function(){
-		if($(this).hasClass('open')){
-			$(this).removeClass('open');
-			$('.global_nav').removeClass('open');
-			$(window).off('.noScroll');
-		}
-		else{
-			$(this).addClass('open');
-			$('.global_nav').addClass('open');
-			$(window).on('touchmove.noScroll', function(e) {
-				e.preventDefault();
-			});
-		}
-	});
+  $('#menu_btn').click(function(){
+    if($(this).hasClass('open')){
+      $(this).removeClass('open');
+      $('.global_nav').removeClass('open');
+      $(window).off('.noScroll');
+    }
+    else{
+      $(this).addClass('open');
+      $('.global_nav').addClass('open');
+      $(window).on('touchmove.noScroll', function(e) {
+          e.preventDefault();
+      });
+    }
+  });
 });
 
 
@@ -141,6 +109,8 @@ $(function(){
 		$(window).off('.noScroll');
 	});
 });
+
+
 //Link area fix
 $(function(){
 	$(".link").click(function(){
@@ -164,15 +134,25 @@ $(window).on('load', function(){
 	});
 });
 
-jQuery(document).ready(function($) {
+
+//SP bottom bar fix
+$(function(){
+  var sp_nav = $('#sp_nav');
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        sp_nav.addClass('active');
+      } else {
+        sp_nav.removeClass('active');
+      }
+    });
+});
+
+
+$(function(){
   var ua = navigator.userAgent;
   var headerHight = 100; //ヘッダの高さ
   if(ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0) {
     //スマートフォンからアクセスの場合
-//    $('.global_nav a').click(function(){
-//      $('.global_nav').removeClass('open');
-//      $('#menu_btn').removeClass('open');
-//    });
     $('a[href^=#]').click(function(){
       var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
@@ -188,13 +168,6 @@ jQuery(document).ready(function($) {
       var position = target.offset().top-headerHight; //ヘッダの高さ分位置をずらす
       $("html, body").animate({scrollTop:position}, 550, "swing");
       return false;
-    });
-    $(function(){
-      $(".global_nav li").hover(function(){
-        $(this).children('ul').stop().slideDown();
-      }, function(){
-        $(this).children('ul').stop().slideUp();
-      });
     });
   };
 });
@@ -296,6 +269,3 @@ $(function(){
     }
   });
 });
-/***********************************************************************
-    変更部分ここまで
-**********************************************************************/

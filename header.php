@@ -23,24 +23,7 @@
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <link rel="icon" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <!-- /icon -->
-
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/slick.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
-    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
-    <!-- /css-->
-
-    <!-- font-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> -->
-    <!-- /font-->
-
-    <!-- script -->
-    <script src="<?php echo get_template_directory_uri(); ?>/script/min/jquery.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/script/min/slick.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/script/min/jquery.inview.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/script/min/ajaxzip3.min.js"></script>
-    <!-- /script -->
+    <link rel="stylesheet" href="https://use.typekit.net/uhq8ela.css">
 
     <!-- wp_head -->
     <?php wp_head(); ?>
@@ -80,12 +63,12 @@
   <!-- /noscript -->
   <!-- #main -->
   <div id="main" class="contents">
-    <section id="sp_nav" class="sp">
+    <div id="sp_nav">
       <ul>
         <li><a href="https://kanazawa-website.com/#contact"><img src="<?php echo get_template_directory_uri(); ?>/images/sp_nav_contact_01.png" alt="お問い合わせ"></a></li>
       </ul>
       <div class="overlay"></div>
-    </section>
+    </div>
     <header>
      <div class="header_inr">
        <h1><a href="<?php echo home_url(); ?>">KANAZAWA HOMEPAGE.com</a></h1>

@@ -2,10 +2,17 @@
 	<section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
 	<?php include_once("nav.php"); ?>
 	<!-- main -->
+<section class="m_ttlArea_1">
+ <div id="breadcrumb">
+  <ul>
+    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+    <li>&gt;</li>
+    <li>プライバシーポリシー</li>
+  </ul>
+</div>
+  <h1>PRIVACY POLICY<span>プライバシーポリシー</span></h1>
+</section>
 	<main id="privacy" class="content">
-		<section>
-          <div class="ttl"><h3>PRIVACY POLICY<span>プライバシーポリシー</span></h3></div>
-		</section>
 		<section class="privacyList">
           <div class="privacyList_inr">
             <div class="privacyList_inr_item">

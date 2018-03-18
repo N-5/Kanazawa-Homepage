@@ -6,6 +6,38 @@
 $place = "石川";
 $city = "金沢";
 
+
+//load css
+function register_stylesheet() {
+  wp_register_style('style', get_template_directory_uri().'/css/style.css');
+  wp_register_style('slick', get_template_directory_uri().'/css/slick.css');
+}
+function add_stylesheet() {
+  register_stylesheet();
+  wp_enqueue_style('style', '', array(), '1.0', false);
+  wp_enqueue_style('slick', '', array(), '1.0', false);
+}
+add_action('wp_enqueue_scripts', 'add_stylesheet');
+
+
+//load js
+function register_script(){
+  wp_deregister_script('jquery'); // disable default jQuery
+  wp_register_script('jquery', get_template_directory_uri().'/script/min/jquery.min.js');
+  wp_register_script('slick', get_template_directory_uri().'/script/min/slick.min.js');
+  wp_register_script('script', get_template_directory_uri().'/script/min/script-min.js');
+  wp_register_script('inview', get_template_directory_uri().'/script/min/jquery.inview.min.js');
+}
+function add_script(){
+  register_script();
+  wp_enqueue_script('jquery', '', array(), '1.0', false);
+  wp_enqueue_script('slick', '', array(), '1.0', false);
+  wp_enqueue_script('script', '', array(), '1.0', false);
+  wp_enqueue_script('inview', '', array(), '1.0', false);
+}
+add_action('wp_print_scripts','add_script');
+
+
 //画像サイズ
 if ( function_exists( 'add_image_size' ) ) {
   //add_image_size( 'custom_size',134,134, true );

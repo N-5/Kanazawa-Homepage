@@ -7,7 +7,6 @@ $breakpoints: (
 	'sp': 'screen and (max-width: 425px)',
 	'tb': 'screen and (min-width: 426px) and (max-width: 999px)',
 	'sptb': 'screen and (max-width: 999px)',
-	'tbpc': 'screen and (min-width: 426px) and (min-width: 1000px)',
 	'pc': 'screen and (min-width: 1000px)',
 ) !default;
 @mixin mq($breakpoint: sp) {
@@ -16,32 +15,13 @@ $breakpoints: (
   }
 }
 
-//colorセット
-$white: #fff;
-$gold: #b7a479;
-$color: #2e3b4e;
-$blue: #2095ce;
-$pink: #ff3f7f;
-
-$c-black: #221714;
-$c-grey: #242424;
-$c-palegrey: #f0f0f0;
-$c-darkgold: #585142;
-
-
-//font設定
-$f-sans: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "游ゴシック", YuGothic, "Meiryo", sans-serif;
-$f-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", serif;
-$f-cinzel: 'Cinzel', serif, $f-serif;
-
-
 //自動フォントサイズ調整
 @mixin fzvw($px) {
-  font-size: $px / 640 * 100 + vw;
+  font-size: $px / 750 * 100 + vw;
 }
 @mixin fz($px) {
   @include mq(sp) {
-    font-size: $px * 1.5 / 750 * 100 + vw;
+    font-size: $px * 1.4 / 640 * 100 + vw;
   }
   @include mq(tb) {
     font-size: $px + px;
@@ -50,6 +30,8 @@ $f-cinzel: 'Cinzel', serif, $f-serif;
     font-size: $px + px;
   }
 }
+
+
 @mixin cols($sp, $tb, $pc) {
   font-size: 0;
   letter-spacing: 0;

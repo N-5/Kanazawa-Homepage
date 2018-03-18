@@ -10,6 +10,8 @@
   padding-top: 1%;
   h3 {
     font-weight: bold;
+    @include fz(16);
+    margin-top: 1rem;
     margin-bottom: 20px;
   }
   ul {
@@ -31,7 +33,7 @@
 #sidebar {
   display: inline-block;
   vertical-align: top;
-  margin: 170px 0 0 60px;
+  margin: 5rem 0 0 60px;
   width: 330px;
   @include mq(sptb) {
     width: 100%;
@@ -40,10 +42,9 @@
   h3 {
     @include fz(14);
     font-weight: bold;
-    background: #2e3b4e;
-    padding: 4px 11px;
+    background: #262626;
+    padding: 10px 11px;
     color: #fff;
-    border-radius: 5px;
   }
   ul {
     margin: 20px 0 60px;
@@ -58,7 +59,7 @@
         a {
           padding-left: 6%;
           .count {
-            background: #ccc;
+            background: $gradation;
             display: inline-block;
             vertical-align: middle;
             margin-left: 3%;
@@ -69,7 +70,7 @@
           }
           span {
             position: absolute;
-            color: $color;
+            color: #fff;
             left: 50%;
             top: 50%;
             @include fz(10);
@@ -104,6 +105,7 @@
   }
 }
 #news_archive {
+  clear: both;
   .news_archive_inr {
     @include internal_inr;
     padding-bottom: 5%;
@@ -128,10 +130,15 @@
         color: #000;
       }
     }
+    .sory {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
     .post_list {
-        width: 800px;
-        display: inline-block;
+      width: 800px;
+      display: inline-block;
       overflow: hidden;
+      margin-top: 5rem;
         @include mq(sptb) {
             width: 100%;
             margin: 0 auto;
@@ -150,24 +157,20 @@
     }
     h2 {
       @include fz(12);
-      background: $color;
+      color: #292929;
       width: 100%;
-      color: #fff;
+      border-bottom: 1px solid #292929;
       display: block;
-      padding: 2px 10px 6px;
+      padding: 1rem 0;
       span {
         @include fz(16);
         margin-right: 1%;
-        &:before {
-          content: '“'
-        }
-        &:after {
-          content: '”'
-        }
+        background: $gradation;
+        color: #fff;
+        padding: .5rem 1rem;
       }
     }
     ul.col3 {
-      margin: 60px 0 0;
       @include mq(sp) {
         margin: 0 auto;
       }
@@ -231,7 +234,7 @@
                 background-size: contain;
                 height: 15px;
                 left: 10px;
-                top: 7px;
+                top: 4px;
                 width: 15px;
                 position: absolute;
               }
@@ -254,12 +257,16 @@
             width: 100%;
             margin: 0 auto;
           }
+          @include mq(pc) {
+            margin-top: 55px;
+          }
           .post_area_ttl {
             border: 1px solid #e6e6e6;
             padding: 5%;
             > h2 {
               @include fz(25);
               margin-bottom: 15px;
+              line-height: 1.3em;
               padding-bottom: 10px;
               font-weight: bold;
               time {
@@ -305,6 +312,7 @@
             }
             h2 {
               @include fz(20);
+              line-height: 1.5;
               padding: 0 0 1% 0;
               border-bottom: 2px solid $color;
             }

@@ -4,19 +4,23 @@
 // ******************************
 * {
   box-sizing: border-box;
-  font-family: "Noto Sans Japanese";
 }
 body {
+  font-family: $f-yugo;
+  position: relative;
+  letter-spacing: 0;
+  overflow-y: scroll;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 1;
+  word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
-  position: relative;
-  font-family: "Noto Sans Japanese";
-  letter-spacing: 0;
-  word-wrap: break-word;
 }
 img {
+  pointer-events: none;
   width: 100%;
 }
 .sp {
@@ -39,6 +43,10 @@ img {
 }
 a {
   display: block;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
   &:hover {
     opacity: .7;
   }
@@ -48,92 +56,10 @@ p {
     text-align: justify;
   }
   @include fz(14);
-  color: #565656;
-  line-height: 1.8em;
+  color: #292929;
+  line-height: 1.9em;
   font-weight: 300;
 }
 input {
   font-size: 16px;
-}
-
-//リストの３列表示。タブレットでは３列、スマホで１列になります。
-ul.col2 {
-  font-size: 0;
-  text-align: left;
-  li {
-    vertical-align: top;
-    display: inline-block;
-    position: relative;
-    @include mq(sp) {
-      width: 100%;
-      margin: 0 0 6% 0;
-    }
-    @include mq(tb) {
-      width: 48%;
-      margin: 0 4% 0 0;
-      &:nth-child(2n) {
-          margin-right: 0;
-      }
-    }
-    @include mq(pc) {
-      width: 48%;
-      margin-right: 4%;
-      &:nth-child(2n) {
-          margin-right: 0;
-      }
-    }
-  }
-}
-ul.col3 {
-  font-size: 0;
-  text-align: left;
-  li {
-    vertical-align: top;
-    display: inline-block;
-    position: relative;
-    @include mq(sp) {
-      width: 100%;
-      margin: 0 0 6% 0;
-    }
-    @include mq(tb) {
-      width: 30%;
-      margin: 0 5% 0 0;
-      &:last-child {
-          margin-right: 0;
-      }
-    }
-    @include mq(pc) {
-      width: 30%;
-      margin-right: 5%;
-      &:nth-child(3n) {
-          margin-right: 0;
-      }
-    }
-  }
-}
-ul.col4 {
-  font-size: 0;
-  text-align: left;
-  li {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    @include mq(sptb) {
-      width: 47%;
-      margin: 0 6% 6% 0;
-      display: inline-block;
-      &:nth-child(2n) {
-          margin-right: 0;
-      }
-    }
-    @include mq(pc) {
-      width: 23%;
-      display: inline-block;
-      vertical-align: top;
-      margin-right: 2%;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
 }

@@ -1,9 +1,57 @@
 // ******************************
 //module.scss　　
-//モジュール系のスタイル。マージンは設定しない。
 // ******************************
+.m_animation_1 {
+  position: relative;
+  &:after {
+    content: '';
+    background: $gradation;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition-delay: 5s;
+    transition: width 2s cubic-bezier(.19,1,.22,1);
+  }
+}
+.m_ttlArea_1 {
+  background: $gradation;
+  @include mq(sp) {
+    margin-bottom: 1em;
+  }
+  a {
+    color: #fff;
+  }
+  h1 {
+    @include grobal_inr;
+    color: #fff;
+    padding: 2rem 0;
+    letter-spacing: .1em;
+    @include fz(50);
+    font-family: $futura;
+    @include mq(sp) {
+      padding: .7rem 0 1rem;
+    }
+    span {
+      display: block;
+      letter-spacing: 0.01em;
+      @include fz(14);
+      margin-top: .5rem;
+      @include mq(sp) {
+        display: inline-block;
+        margin-left: 1em;
+      }
+    }
+  }
+}
 
 
+section.animation .m_animation_1 {
+  &:after {
+    width: 0% !important;
+  }
+}
 .view_btn {
   clear: both;
   display: inline-block;
@@ -14,7 +62,7 @@
   }
   a {
     @include mq(sp) {
-      padding: 3.6% 0;
+      padding: 15px 0;
     }
     background-color: #4173c9;
     background-image: -moz-linear-gradient(top,#5e8ee4,#4173c9);
@@ -22,7 +70,7 @@
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#5e8ee4),color-stop(1,#4173c9));
     @include fz(14); 
     color: #fff;
-    padding: 3% 0;
+    padding: 12px 0;
     cursor: pointer;
     white-space: nowrap;
     transition: .7s ease all;
@@ -34,7 +82,7 @@
         content: '';
         position: absolute;
         top: 40%;
-        right: 15%;
+        right: 10%;
         transform: rotate(45deg);
         vertical-align: baseline;
         border-top: 1px solid #fff;
@@ -73,22 +121,25 @@
 .textbox {
   time {
     @include fz(12);
+    background: #eff2f5;
+    display: inline-block;
+    padding: .3rem .5rem;
   }
   i {
-    @include fz(10);
+    @include fz(12);
     position: absolute;
     top: 0;
     right: 0;
     display: inline-block;
     color: #fff;
     background: $color;
-    padding: .2em 1.2em;
+    padding: .5rem 1rem;
   }
   h4 {
-    @include fz(16);
-    margin-top: .2em;
+    @include fz(15);
+    line-height: 1.6;
+    margin: .5em 0;
     font-weight: bold;
-    font-weight: normal;
   }
   p {
     @include fz(13);
