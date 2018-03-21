@@ -1,10 +1,19 @@
 <?php get_header(); ?>
 <section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
+<section class="m_ttlArea_1">
+ <div id="breadcrumb">
+  <ul>
+    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+    <li>&gt;</li>
+    <li>カテゴリー</li>
+  </ul>
+</div>
+<h1>CATEGORY<span>カテゴリー</span></h1>
+</section>
 <?php include_once("nav.php"); ?>
 <section id="news_archive">
   <div class="news_archive_inr">
     <div class="post_list">
-      <h1>CATEGORY<span>カテゴリー</span></h1>
       <h2><span><?php single_cat_title(); ?></span>カテゴリー記事の一覧です</h2>
       <div class="lead"><?php echo category_description( $category_id ); ?></div>
       <ul class="col3">

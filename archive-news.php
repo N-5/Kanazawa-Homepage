@@ -1,20 +1,22 @@
 <?php get_header(); ?>
-<section id="menu_btn">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off">
-</section>
-<?php include_once("nav.php"); ?>
+  <section id="menu_btn">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off">
+  </section>
+  <?php include_once("nav.php"); ?>
+  <section class="m_ttlArea_1">
+   <div id="breadcrumb">
+      <ul>
+        <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+        <li>&gt;</li>
+        <li><a href="<?php echo home_url(); ?>/news">NEWS一覧</a></li>
+      </ul>
+    </div>
+    <h1>NEWS<span>ニュース一覧</span></h1>
+  </section>
   <section id="news_archive">
     <div class="news_archive_inr">
       <div class="post_list">
-        <div id="breadcrumb">
-          <ul>
-            <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
-            <li>&gt;</li>
-            <li><a href="<?php echo home_url(); ?>/news">NEWS一覧</a></li>
-          </ul>
-        </div>
-      <h1>NEWS<span>ニュース一覧</span></h1>
       <ul class="col3">
         <?php
           $loop = new WP_Query (array(

@@ -1,8 +1,17 @@
 <?php get_header(); ?>
 <div id="<?php echo get_page($wp_query->post->ID)->post_name; ?>" class="main">
+ <section class="m_ttlArea_1">
+ <div id="breadcrumb">
+    <ul>
+      <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+      <li>&gt;</li>
+      <li>NEWSカテゴリー</li>
+    </ul>
+  </div>
+  <h1>CATEGORY<span>カテゴリー</span></h1>
+</section>
   <?php get_sidebar(); ?>
   <div id="content">
-      カテゴリー
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
       <div class="box">
         <p><a href="<?php the_permalink() ?>"><?php $img[0]=get_post_meta($post->ID,'File Upload',true); ?>

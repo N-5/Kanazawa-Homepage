@@ -1,0 +1,105 @@
+// ******************************
+//variation.scss
+// ******************************
+
+//colorセット
+$white: #fff;
+$color: #2e3b4e;
+$blue: #2095ce;
+$pink: #ff3f7f;
+$gradation: linear-gradient(to right,#64c8cd,#3cb3d0);
+
+$c-black: #221714;
+$c-grey: #242424;
+$c-palegrey: #f0f0f0;
+$c-darkgold: #585142;
+
+
+//font設定
+$f-sans: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "游ゴシック", YuGothic, "Meiryo", sans-serif;
+$f-serif: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", serif;
+$f-yugo: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+$futura: "futura-pt",sans-serif;
+
+
+//リストの３列表示。タブレットでは３列、スマホで１列になります。
+ul.col2 {
+  font-size: 0;
+  text-align: left;
+  li {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    @include mq(sp) {
+      width: 100%;
+      margin: 0 0 6% 0;
+    }
+    @include mq(tb) {
+      width: 48%;
+      margin: 0 4% 0 0;
+      &:nth-child(2n) {
+          margin-right: 0;
+      }
+    }
+    @include mq(pc) {
+      width: 48%;
+      margin-right: 4%;
+      &:nth-child(2n) {
+          margin-right: 0;
+      }
+    }
+  }
+}
+ul.col3 {
+  font-size: 0;
+  text-align: left;
+  li {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    @include mq(sp) {
+      width: 100%;
+      margin: 0 0 6% 0;
+    }
+    @include mq(tb) {
+      width: 30%;
+      margin: 0 5% 0 0;
+      &:last-child {
+          margin-right: 0;
+      }
+    }
+    @include mq(pc) {
+      width: 30%;
+      margin-right: 5%;
+      &:nth-child(3n) {
+          margin-right: 0;
+      }
+    }
+  }
+}
+ul.col4 {
+  font-size: 0;
+  text-align: left;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    @include mq(sptb) {
+      width: 47%;
+      margin: 0 6% 6% 0;
+      display: inline-block;
+      &:nth-child(2n) {
+          margin-right: 0;
+      }
+    }
+    @include mq(pc) {
+      width: 23%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 2%;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

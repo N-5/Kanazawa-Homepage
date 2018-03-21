@@ -1,10 +1,19 @@
 <?php get_header(); ?>
 <section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
 <?php include_once("nav.php"); ?>
+<section class="m_ttlArea_1">
+ <div id="breadcrumb">
+  <ul>
+    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+    <li>&gt;</li>
+    <li>検索結果</li>
+  </ul>
+</div>
+  <h1>SEARCH<span>検索結果</span></h1>
+</section>
 <section id="news_archive">
   <div class="news_archive_inr">
     <div class="post_list">
-      <h1>SEARCH<span>検索結果一覧</span></h1>
       <h2><span><?php the_search_query(); ?></span>の検索結果 : <?php echo $wp_query->found_posts; ?>件</h2>
       <!-- 投稿情報 loop -->
       <ul class="col3">
@@ -32,7 +41,7 @@
       </ul>
       <?php else: ?>
       <div class="post">
-        <p>申し訳ございません。<br />該当する記事がございませんでしたが、こんな記事もおすすめです。</p>
+        <p class="sory">申し訳ございません。<br />該当する記事がございませんでしたが、こんな記事もおすすめです。</p>
       </div>
       <section class="relation">
         <?php

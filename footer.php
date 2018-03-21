@@ -126,8 +126,6 @@
   </section>
   </footer>
     <!-- /footer -->
-  <!-- script.js -->
-  <script src="<?php echo get_template_directory_uri(); ?>/script/min/script-min.js"></script>
   <?php wp_footer(); ?>
 </body>
 </html>

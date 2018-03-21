@@ -1,54 +1,13 @@
 <?php get_header(); ?>
 <!-- end modal-main -->
-<section id="nav" class="global_nav re">
-  <ul>
-    <li><a href="/news">最新記事</a>
-      <ul class="col4">
-        <?php
-        $loop = new WP_Query (array(
-          'post_type'			=> 'news',
-          'order'				=> 'DESC',
-          'posts_per_page'	=> 4,
-        ));
-        while ($loop -> have_posts()) : $loop -> the_post();
-        ?>
-        <li <?php if( $days > $news ){ print 'class="new"'; } ?>>
-          <a href="<?php the_permalink(); ?>">
-            <figure>
-              <?php if (has_post_thumbnail()) : ?>
-              <?php $title= get_the_title(); the_post_thumbnail('list-thumb' , array( 'alt' =>$title, 'title' => $title)); ?>
-              <?php else : ?>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-noimage.jpg" alt="NoImage" />
-              <?php endif ; ?>
-            </figure>
-            <div class="textbox">
-              <div class="info">
-                <?php if(is_object_in_term( $post->ID, 'newscat')): ?>
-                <?php endif ; ?>
-                <h4><?php the_title(); ?></h4>
-                <time>
-                  <?php the_time('Y.m.d'); ?>
-                </time>
-              </div>
-            </div>
-          </a>
-        </li>
-        <?php endwhile; ?>
-      </ul>
-    </li>
-    <li><a href="#price">新プラン</a><ul><li>新たに<span>新パックプラン</span>をご用意しました！</li></ul></li>
-    <li><a href="<?php echo home_url(); ?>/price/">価格について</a></li>
-    <li><a href="#faq">Q&amp;A</a><ul><li>よくある<span>ご質問</span>にお答えします。</li></ul></li>
-    <li><a href="#contact">お問い合わせ</a></li>
-  </ul>
-</section>
+<?php include_once("nav.php"); ?>
 <main id="top" class="content">
   <section id="menu_btn">
     <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on" alt="MENU">
     <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off" alt="CLOSE">
   </section>
   <!-- end SP MENU -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <ul class="hero_slider">
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/kv_img_01_pc.jpg" class="imgchange" alt="北陸<?php echo $place; ?>の<?php echo $city; ?>でホームページを制作を依頼するなら"></li>
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/kv_img_02_pc.jpg" class="imgchange" alt="創業者に嬉しい格安ホームページ制作会社"></li>
@@ -64,17 +23,38 @@
   <!-- end hero -->
   <section id="lead">
     <div class="lead_inr">
-      <h2>私たちが提案する<br class="sp">新しいフツー「創業プラン」<br>たった49.800円であなたのホームページを制作いたします。</h2>
+      <h2 class="m_animation_1"><span class="en">MISSION</span>クリエイティブによる、<br>経営改善を第一に考える。</h2>
       <p>弊社は⾦沢で2015年に創業したばかりのまだ新しいベンチャー企業です。コンサルティングを得意とするWEBアナリストの代表と、<br>ホームページ制作・デザイン・動画制作といったクリエイティブフィールドの第⼀線で活躍してきたWEBクリエイターの３⼈で活動をしております。<br>クリエイティブによる経営改善を第一に考えるホームページ制作会社です。<br></p>
-      <p>この創業パックは企画・制作段階での徹底的な効率化によって、<?php echo $place; ?>・<?php echo $city; ?>トップクラスのクオリティを保ちながら、<span>49,800円</span>という<br><?php echo $city; ?>のホームページ制作会社の中では圧倒的低価格でホームページを制作することが可能になりました。</p>
+      <p>この創業パックは企画・制作段階での徹底的な効率化によって、<?php echo $place; ?>・<?php echo $city; ?>トップクラスのクオリティを保ちながら、最安値プランでは <span>49,800円</span>という<br><?php echo $city; ?>のホームページ制作会社の中では圧倒的低価格でホームページを制作することが可能になりました。<br>また本気でWEBからの集客を考えられているお客様からは、しっかりとしたSEO対策が可能なゴールドプラン以上も大変好評です。</p>
       <p>弊社の創業パックは、すぐにWEB集客のできるホームページによって北陸をHOTにするベンチャー企業を応援します！</p>
     </div>
   </section>
   <!-- end lead -->
   <section id="price">
     <div class="price_inr">
-      <h2>どんなご相談も承ります！<span>あくまで一例です。<br class="sp">御社に沿ったプランをご提案させていただきます。</span></h2>
-      <div class="price_inr_table">
+      <h2 class="m_animation_1">制作プラン<span>問題解決に沿った柔軟なプランをご用意しております。</span></h2>
+      <div class="price_sp sp">
+        <ul>
+          <li>
+            <h3>創業プラン</h3>
+            <p>49,800<small>円</small></p>
+          </li>
+          <li>
+            <h3>シンプルプラン</h3>
+            <p>388,000<small>円</small></p>
+          </li>
+          <li>
+            <h3>ゴールドプラン</h3>
+            <p>628,000<small>円</small></p>
+          </li>
+          <li>
+            <h3>ブラックプラン</h3>
+            <p>1,180,000<small>円</small></p>
+          </li>
+        </ul>
+        <div class="view_btn"><a href="<?php echo home_url(); ?>/price/" class="arrow">料金プランの詳細はこちら</a></div>
+      </div>
+      <div class="price_inr_table pc">
         <table>
           <thead>
             <tr>
@@ -172,11 +152,11 @@
   <!-- end price -->
   <section id="concept">
     <div class="concept_inr">
-      <h2>新規ホームページサイト制作、<br class="sp">サイトリニューアルも。</h2>
+      <h2 class="m_animation_1"><span class="en">Our Specialization</span>ご新規での<br class="sp">ホームページサイト制作、<br class="sp">サイトリニューアルも。</h2>
       <ul class="col3">
         <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/concept_li_img1.png"></figure><p>WordPressによる<br>トップクラスの<span>SEO対策</span></p></li>
         <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/concept_li_img2.png"></figure><p><span>レスポンシブ</span><br>WEBデザイン(スマホ対応)</p></li>
-        <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/concept_li_img3.png"></figure><p>高いクオリティ＆<br>依頼しやすい<span>低価格</span></p></li>
+        <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/concept_li_img3.png"></figure><p>高いクオリティと<br>依頼しやすい<span>低価格</span></p></li>
       </ul>
       <div class="view_btn"><a class="arrow" href="#contact">相談してみる</a></div>
     </div>
@@ -184,54 +164,54 @@
   <!-- end reason -->
   <section id="contents">
     <div class="contents_inr">
-      <h2>WEBの困ったをご相談ください。<br class="sp"><span>創業パックプランであれば<em>最⼤６つ</em>お選びいただくことが可能です。</span></h2>
+      <h2 class="m_animation_1"><span class="en">OPTION</span>選べるオプションはさまざま。<br>お客様に合ったソリューションを<br class="sp">ご提案させていただきます。<br class="sp"><span>創業パックプランであれば最⼤６つお選びいただくことが可能です。</span></h2>
       <ul class="col2">
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/01.png" alt="01"></figure>
+          <figure>01</figure>
           <div><h4>メインビジュアル</h4><p>インパクトを与えてエンドユーザーの直帰率を下げるメインビジュアル。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/02.png" alt="02"></figure>
+          <figure>02</figure>
           <div><h4>コンセプト</h4><p>商品（サービス）の持つ特⻑やブランドストーリーを端的に伝えるコンセプト。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/03.png" alt="03"></figure>
+          <figure>03</figure>
           <div><h4>こんなお悩みありませんか？</h4><p>エンドユーザーの興味や希望、願望といった意識を刺激するための問題提起。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/04.png" alt="04"></figure>
+          <figure>04</figure>
           <div><h4>商品（サービス）の強み</h4><p>商品やサービスのメリット・ベネフィットといった打ち出したい強みをPRします。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/05.png" alt="05"></figure>
+          <figure>05</figure>
           <div><h4>制作事例</h4><p>エンドユーザーに安⼼感を与えられ、ホームページの信頼性にも直結する過去実績。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/06.png" alt="06"></figure>
+          <figure>06</figure>
           <div><h4>お客様の声</h4><p>信頼感と⼈気感の裏付けとなる、実際に商品が購⼊されて評価を得ているという客観的事実。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/07.png" alt="07"></figure>
+          <figure>07</figure>
           <div><h4>他者との比較スペック</h4><p>数字として⽬に⾒える価格やスペック内容を他社と⽐較して御社の強みを打ち出します。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/08.png" alt="08"></figure>
+          <figure>08</figure>
           <div><h4>スタッフ紹介</h4><p>御社の雰囲気やイメージを、スタッフ紹介を通すことでより具体的･多⾯的に伝えます。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/09.png" alt="09"></figure>
+          <figure>09</figure>
           <div><h4>サービスの流れ</h4><p>商品やサービス導⼊に関する⼼配や不安を払拭するためのフローをピックアップ。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/10.png" alt="10"></figure>
+          <figure>10</figure>
           <div><h4>お問い合わせフォーム</h4><p>ホームページ上でのエンドユーザーとの窓⼝となり、御社事業の効率化にも役⽴つコンタクトフォーム。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/11.png" alt="11"></figure>
+          <figure>11</figure>
           <div><h4>よくある質問</h4><p>エンドユーザーの疑問を解決して離脱を防ぎ、また商品やサービスに専⾨性を加えます。</p></div>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/12.png" alt="12"></figure>
+          <figure>12</figure>
           <div><h4>ブログ</h4><p>エンドユーザーに有益な情報（コンテンツ）を発信し続けることはSEO的にも重要です。</p></div>
         </li>
       </ul>
@@ -240,24 +220,10 @@
   <!-- end concept -->
   <section id="seo">
     <div class="seo_inr">
-      <h2>どこよりも徹底的に。<br>あなたのホームページをサポートします。</h2>
+      <h2 class="m_animation_1"><span class="en">SPPORT</span>どこよりも徹底的に。<br>あなたのホームページを<br class="sp">サポートします。</h2>
       <div class="lead">
-        <i>
-          <svg version="1.1" id="analytics" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-            <path d="M62.9,93.3c-1.7-1.3-1.9-3.2-1.9-3.2L60.4,86H39.6L39,90.2c0,0-0.2,1.9-1.9,3.2c-1.7,1.3-3.1,2.4-1.7,2.6
-                     c1.3,0.2,13.7,0,14.7,0c0.9,0,13.3,0.2,14.7,0C66,95.7,64.7,94.6,62.9,93.3z"/>
-            <g>
-              <rect x="22.8" y="49.5" width="8" height="15"/>
-              <rect x="39.8" y="42.5" width="8" height="22"/>
-              <rect x="55.8" y="49.5" width="8" height="15"/>
-              <rect x="70.8" y="42.5" width="8" height="22"/>
-              <polygon points="44.6,34.1 60.8,44.4 83.2,28.2 80.8,25 60.7,39.6 44.9,29.4 16.8,43.8 18.7,47.4 	"/>
-            </g>
-            <path d="M96,16H4c-2.2,0-4,1.8-4,4v58c0,2.2,1.8,4,4,4h92c2.2,0,4-1.8,4-4V20C100,17.8,98.2,16,96,16z M94,70H6V22h88V70z"/>
-          </svg>
-          </i>
-          <div><h3><?php echo $city; ?>ホームページ制作.COMのSEO対策サービスは内部対策中心で、他者の外部リンクに頼ったSEO対策は行いません。</h3>
+        <i><img src="<?php echo get_template_directory_uri(); ?>/images/seo_icon.png" alt=""></i>
+          <div><h3><?php echo $city; ?>ホームページ制作.COMのSEO対策サービスは内部対策中心で、<br>他者の外部リンクに頼ったSEO対策は行いません。</h3>
           <p>Googleの検索アルゴリズムの変動にもアンテナを張り巡らせ細かな変化にも対応し、順位変動をコントロールいたします。<br>
           費用はかけられないお客様にもご利用いただくためにSEO対策に対するディレクションのみでのお仕事や、SEOコンテンツの修正を丸投げといった<br>
           ご要望に柔軟なサービスをご提供しております。<br>
@@ -266,73 +232,14 @@
     </div>
     
     <div class="lead">
-      <i><svg version="1.1" id="seotag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g>
-             <path d="M71.8,28.2c0.8,0.8,2,0.8,2.8,0l14.9-14.9c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0L71.8,25.4C71,26.2,71,27.4,71.8,28.2z"/>
-             <g><path d="M60.8,37.7c-0.9-0.9-1.8-1.5-2.7-1.9c-0.9-0.4-1.8-0.4-2.7-0.2s-1.6,0.6-2.3,1.3c-0.5,0.5-0.9,1-1.1,1.6c-0.2,0.6-0.3,1.2-0.3,1.9s0.3,1.3,0.6,2.1c0.4,0.7,0.9,1.4,1.6,2.1c0.7,0.7,1.4,1.2,2.1,1.6c0.7,0.4,1.4,0.6,2.1,0.7
-                       c0.7,0,1.3,0,1.9-0.3c0.6-0.2,1.1-0.6,1.6-1.1c0.6-0.6,1.1-1.4,1.3-2.2c0.2-0.8,0.1-1.7-0.2-2.7C62.5,39.6,61.8,38.6,60.8,37.7z"
-                    />
-              <path d="M85.8,25.3L83,22.5L79.5,26c0.5,2.3-0.2,4.8-2,6.6c-2.8,2.8-7.4,2.8-10.2,0c-2.8-2.8-2.8-7.4,0-10.2
-                       c1.8-1.8,4.3-2.4,6.6-2l3.5-3.5l-2.8-2.8c-1.9-1.9-21.8-1.9-23.7,0L11.4,53.7c-1.9,1.9-1.9,5,0,7l27.9,27.9c1.9,1.9,5,1.9,7,0
-                       L85.8,49C87.7,47.1,87.7,27.2,85.8,25.3z M42.2,67.9C41.8,69,41.1,70,40.1,71c-1.2,1.2-2.4,2-3.6,2.3c-0.9,0.2-1.8,0.2-2.7,0
-                       c-0.9-0.2-1.6-0.6-2.1-1.1c-0.3-0.3-0.5-0.7-0.5-1.1c0-0.4,0.2-0.8,0.5-1.1c0.3-0.3,0.6-0.4,0.9-0.4c0.3,0,0.7,0.1,1.2,0.3
-                       c0.5,0.2,1,0.4,1.5,0.5c0.4,0.1,0.9,0,1.4-0.1c0.5-0.2,1-0.5,1.5-1c0.7-0.7,1.2-1.5,1.3-2.3c0.1-0.8-0.1-1.4-0.6-2
-                       c-0.4-0.4-0.9-0.6-1.4-0.6c-0.5,0-1,0.1-1.5,0.4c-0.5,0.3-1.2,0.6-2,1.1c-1.1,0.7-2,1.2-2.9,1.5c-0.9,0.3-1.7,0.4-2.5,0.3
-                       c-0.8-0.1-1.6-0.5-2.3-1.2c-0.7-0.7-1.1-1.4-1.2-2.3c-0.2-0.9,0-1.8,0.4-2.8c0.4-1,1.1-1.9,2-2.9c0.7-0.7,1.5-1.3,2.2-1.7
-                       c0.7-0.4,1.4-0.6,2.1-0.6c0.7-0.1,1.2,0,1.8,0.2c0.5,0.2,0.9,0.4,1.2,0.7c0.3,0.3,0.5,0.7,0.5,1.1c0,0.4-0.1,0.8-0.4,1.1
-                       c-0.3,0.3-0.6,0.4-0.9,0.4s-0.7-0.1-1.2-0.2c-0.7-0.2-1.3-0.3-1.9-0.3c-0.6,0.1-1.2,0.4-1.9,1.1c-0.6,0.6-1,1.3-1.1,2
-                       c-0.1,0.7,0,1.2,0.4,1.6c0.2,0.2,0.5,0.4,0.8,0.4c0.3,0,0.6,0,1-0.1c0.4-0.1,0.7-0.2,1-0.4c0.3-0.2,0.8-0.5,1.5-0.9
-                       c0.8-0.5,1.6-1,2.4-1.3c0.8-0.4,1.5-0.6,2.1-0.7c0.7-0.1,1.3-0.1,2,0.1c0.6,0.2,1.3,0.6,1.9,1.2c0.7,0.7,1.2,1.6,1.4,2.5
-                       C42.7,65.9,42.6,66.9,42.2,67.9z M55,55.7l-6.7,6.7c-0.5,0.5-1,0.8-1.5,0.8c-0.5,0-1-0.3-1.5-0.8l-9.1-9.1c-0.4-0.4-0.6-0.7-0.7-1
-                       c-0.1-0.3-0.1-0.7,0-1s0.4-0.7,0.7-1l6.5-6.5c0.4-0.4,0.8-0.6,1.1-0.6s0.7,0.1,1,0.4c0.3,0.3,0.4,0.6,0.4,1c0,0.4-0.2,0.7-0.6,1.1
-                       L39,51.2l3,3l5.1-5.1c0.4-0.4,0.7-0.6,1.1-0.6c0.4,0,0.7,0.1,0.9,0.4s0.4,0.6,0.4,0.9c0,0.4-0.2,0.7-0.6,1.1L43.8,56l3.5,3.5
-                       l5.7-5.7c0.4-0.4,0.8-0.6,1.1-0.6c0.4,0,0.7,0.1,1,0.4c0.3,0.3,0.4,0.6,0.4,1C55.6,55,55.4,55.3,55,55.7z M65.8,44.4
-                       c-0.4,1-1.1,2-2.1,3c-1,1-2,1.6-3,2.1c-1.1,0.4-2.1,0.6-3.2,0.6c-1.1-0.1-2.1-0.3-3.2-0.9c-1-0.5-2-1.2-2.9-2.2
-                       c-0.9-0.9-1.7-1.9-2.2-3c-0.5-1-0.8-2.1-0.8-3.2s0.2-2.1,0.6-3.1c0.4-1,1.1-2,2-2.9c1.3-1.3,2.6-2.1,4-2.5s2.8-0.3,4.2,0.1
-                       c1.4,0.5,2.7,1.4,4,2.6c0.9,0.9,1.7,1.9,2.2,2.9c0.5,1,0.8,2.1,0.9,3.1C66.4,42.3,66.2,43.4,65.8,44.4z"/></g>
-          </g></svg></i>
+      <i><img src="<?php echo get_template_directory_uri(); ?>/images/seo2_icon.png" alt=""></i>
       <div>
         <h3>ホームページ集客におけるSEO対策とは？</h3>
         <p>SEO対策とは「Search Engine Optimization」の略で「検索エンジン最適化」といったホームページ集客におけるマーケティング手法のことです。<br> 一般的にはGoogleやYahoo!等で検索するユーザーをターゲットとして、ホームページを検索結果で多く露出させホームページへのアクセスを増やすマーケティング手法を意味します。<br>当社のSEO対策は検索結果の上位表示のみといった部分的な支援にとどまらず、ホームページからの成果を最大化させ達成することを目的としております。</p>
       </div>
     </div>
     <div class="lead">
-      <i><svg version="1.1" id="ishikawa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-             y="0px" viewBox="0 0 125 204" style="enable-background:new 0 0 125 204;" xml:space="preserve"><g><path class="st0" d="M86,53.1c0.5-0.9,1.5-2.3,2.1-1.8s0.9,2,0.5,3.2c-0.5,1.2,1.1,2,0.5,2.9s-2.3,1.4-3.3,1.8
-                                 c-1.1,0.5-1.2-1.7-2.3-1.4c-1.1,0.3-2.3,1.5-2.6,2.7c-0.3,1.2-0.8-0.6-1.5,0c-0.8,0.6-1.5,2.4-1.7,2c-0.1-0.5-1.2-4.7-1.8-5
-                                 c-0.6-0.3-1.7-0.1-1.7-0.6s-0.9-0.6-1.1-1.1c-0.1-0.5-0.5-1.2,0.3-2s1.5-0.6,1.5,0.5s0.6,2.7,1.4,2c0.8-0.8,0.6-1.7,1.4-1.5
-                                 s2,0,2.9-0.8s2.1-0.9,2.4-0.2c0.3,0.8,0.2,1.8,1.4,1.7C85.6,55.3,86,53.1,86,53.1z"/><path class="st0" d="M3,176.3c0.7,0.5,2-0.2,3.2,0.5s2.2,3.4,2.2,4.7c0,1.2,1.7,5.1,2.4,7.1s4.6,1,5.6,0.5s2,0.2,2.2,1.7
-                                 s2.9,2.7,3.9,2.9s2.2-0.7,2.2-0.7s4.6-0.7,5.6-0.5s2.9-1.2,4.2-1.2c1.2,0,2.2,1.7,3.7,2.9c0,0,1.5,0.7,2,2.2s2.9,2.7,3.7,2.7
-                                 c0.7,0,1.5,0.7,1.7,1.5c0.2,0.7,0.2,2.4,1.5,2.4c1.2,0,4.2-1.2,4.2-1.2l3.4-0.5l2.2-0.1c-0.2-0.4-0.2-0.9-0.1-1.8
-                                 c0.1-1,2-3.7,2.3-4.6c0.4-1-0.2-3.5,0-4.4s1.2-0.6,1.7-1.2s2.4-3.3,2.9-3.9c0.5-0.6,0.5-2,1.1-2.7s2.2-3.9,2.2-3.9
-                                 s-0.9-1.6-1.1-2.1s-1.1-0.2-2.4-0.6c-1.3-0.4-1.2-2-1.7-3.1c-0.1-0.3-0.3-0.8-0.5-1.3c-0.8,0.4-1.6,0.7-1.9,0.9
-                                 c0.3-0.2,1.1-0.6,1.9-0.9c-0.5-1.2-1-2.9-1-4.1c0-1.7-0.1-2.1,1.6-3.7c1.7-1.6,0-1.3-0.1-2.2s-0.6-1.5-0.6-3.2s-2.1-2.8-2.6-3.1
-                                 c-0.5-0.2-0.4-2,0-2s2-1.3,2.7-2.6c0.7-1.2-0.4-2.9,0.1-3.6c0.5-0.6,0.2-1.8-0.1-2.2c-0.4-0.4-0.1-1.7,0-2.6c0.1-0.9,0.2-1.5,0.7-2
-                                 s1.3-3.1,1.3-3.9s-1.3-2-2.2-2.1s-0.4-1.8-0.4-2.8s-0.7-3.7-0.6-4.7c0.1-1,0.9-1.2,1.3-1.7c0.5-0.5,0.1-1.6,0.1-1.6
-                                 s0.7-0.4,0.9-1.1c0.1-0.7,1.2-1.3,1.3-1.7s0.1-2-0.2-2.2c-0.4-0.2-0.7-0.2-0.6-1.3c0.1-1.1,0.1-0.5-1.6-2.4c-1.7-2,0.4-2.4,1-2.3
-                                 s1.5-0.6,1.6-1.1s1.3-1.5,1.8-1.6s1.7-2.6,1.3-3.2c-0.4-0.6-1-1.3-0.4-1.7c0.6-0.4,0.7-1.6,0.6-2.3c-0.1-0.7-0.1-2.1,0.4-2.6
-                                 s1-3.7,1.1-4.2s-0.4-1.7,0.5-2.3c0.9-0.6,1.5-2.9,1.2-3.9c-0.2-1-0.1-2.2,0.9-3.7s1.8-1.2,2.7-1.8c0.9-0.6,1.7-2.8,3.4-3.2
-                                 c1.7-0.4,1.5,0.6,2.7,1.1s1.5-1,1.7-1.7s1.5-0.7,2.4-0.5c1,0.2,3.9-0.5,3.9-0.5l1.1,0.9c0.5-1,0.1-3,0.1-6.6
-                                 c0-4.5,0.1-8.3,0.3-10.1c0.2-1.8-0.8-2-0.4-2.6c0.3-0.6,0.9-1.8-0.3-1.4c-1.2,0.5-3.5,1.5-4.1,3.2s0.3,2-0.5,3
-                                 C83.5,66.8,84,66,83.1,66s-0.6,0.3-1.2,0.6c-0.6,0.3-2,1.4-2.6,0.5s0.5-2-0.3-2.1c-0.8-0.2-2.9,0.3-2.4-1.2
-                                 c0.5-1.5,1.2-1.2-0.1-1.4c-1.4-0.1-2.3-0.9-2.9-0.5c-0.6,0.5,0.2,1.5-0.9,2.1c-1.1,0.6-2.4,0.9-3.8,0c-1.4-0.9,0-0.8,0.3-1.5
-                                 c0.3-0.8-0.1-2.1-0.1-3s0.5-1.8,0.8-0.9c0.3,0.9,1.5,0.8,1.8-0.3s0.8-1.5,0.8-2.1s-0.3-1.4-0.8-1.5c-0.5-0.2-1.5,0.6-1.5,0.6
-                                 s-0.5-0.8,0.1-2s2.9-3.9,3.3-5.3c0.5-1.4-0.3-0.9,0.5-1.4s2.3-0.2,2-1.4s-2-1.7-1.5-2.1c0.5-0.5,2.3,1.1,2-0.1
-                                 c-0.3-1.2,0.5-0.8,1.1-0.6s2-1.4,1.5-0.5s-0.5,2.9,0.3,3.6c0.8,0.8,3.5,1.2,3.9,1.8c0.5,0.6,1.4,1.7,2.3,1.1c0.9-0.6,2.1-1.4,2-2.1
-                                 c-0.1-0.8,1.2-1.1,2.4-1.2s0.6-1.5,1.4-3s2.4-2.1,2.6-3.2c0.1-1.1,0.8-3.2,2.6-4.2c1.8-1.1,4.2-1.7,4.2-2.1s1.5-0.3,2.1,0
-                                 s2.9,0.5,3.6,0.2c0.8-0.3,2.4,1.1,3.3,0c0.9-1.1,0.5-1.2,1.2-1.7c0.8-0.5,1.8-2.3,2.1-3.2c0.3-0.9-1.2-0.6-0.8-1.1
-                                 c0.4-0.5,1.4-2.7,0.9-2.4c-0.5,0.3-1.8,0.8-2.1-0.2c-0.3-0.9-0.9-2.6-0.9-2.6s1.4-7.2,3-8.3c1.7-1.1,3.9-0.5,5.9-0.1
-                                 c2,0.3,5.3-1.2,4.4-3.3s-2.7-2.7-1.8-4.4c0.9-1.7,1.5-3,0.1-3.8s-1.7-0.8-2-1.5c-0.3-0.8-1.4-0.6-2.3-0.5s-3.2-0.5-4.2,0
-                                 c-1.1,0.5-1.4,1.2-2.6,1.7s-2,0.9-3.5,1.7s-1.8,0.8-3.3,0.8s-3.3-0.5-6.2,1.5s-6.3,6-6.9,6s-2.3,0-2.9,1.1s-2.9,1.2-4.1,1.8
-                                 s-3.3,2-4.4,2.3c-1.1,0.3-1.8,0.6-2.4,1.4s-3.3,1.5-3.8,0.8c-0.5-0.8,0.1-1.2-1.4-0.9c-1.5,0.3-4.2,0.1-5.4,0.6
-                                 c-1.2,0.5-2.1,2-3.2,2s-1.4,1.2-1.8,1.4c-0.5,0.2-1.7,0-2.3,0.5s-0.6,0.9-1.7,0.9c-1.1,0-1.8,0.8-1.2,1.5c0.6,0.8-0.3,2-0.9,1.8
-                                 c-0.6-0.2-0.9-0.8-1.4,0s0,1.2-0.9,2s-0.5,5.1,0.2,5.6c0.6,0.5-0.2,4.2-1.4,5s-2.3,1.8-2,3s0.1,1.5-0.8,2.4c-0.9,0.9-1.5,2-1.5,3.2
-                                 s-0.3,1.5-0.6,3.8s-0.2,3.3,0.3,3.5s2.1,1.1,2.3,0s1.1-1.8,1.8-1.2c0.8,0.6,2.9,4.1,2,6.5s-1.2,3.5-0.9,5c0.3,1.5,1.1,2.3,1.7,3.2
-                                 c0.6,0.9,1.5,1.7,0.9,3c-0.6,1.4,0.3,1.8,0.8,2.3s1.2-0.6,1.8,2.1s0,5-0.8,6.6c-0.8,1.7-1.2,2.3-0.6,3.3c0,0,1.5,3.2,0.8,6
-                                 c-0.8,2.9-2.7,11.3-5.3,14.9s-8.3,16.3-9.8,17.5c-1.5,1.2-2.3,2-2.3,2.7c0,0.8,2.1,1.5,1.2,1.8c-0.9,0.3-2.4-0.8-2.4-0.8
-                                 s-0.8,0.8-0.9,1.5c-0.2,0.8-9.9,13.1-11.9,15.7c-2,2.6-5.7,8.1-8.6,11s-7.2,7.2-8.9,7.4c-1.7,0.1-3,0.6-3.9,2.4
-                                 c-0.9,1.8-1.8,3.3-2.9,4.4c-0.2,0.2-0.8,0.8-1.7,1.4l1,1.2C1,172.9,2.2,175.8,3,176.3z"/>
-          </g></svg></i>
+      <i><img src="<?php echo get_template_directory_uri(); ?>/images/seo3_icon.png" alt=""></i>
       <div>
         <h3><?php echo $city; ?>だけでなく<?php echo $place; ?>県全域のSEO対策を承ります。</h3>
         <p>弊社の事業拠点である<?php echo $city; ?>市はもちろん、<?php echo $place; ?>県全域・富山県全域・福井県全域といった北陸におけるホームページの最適化を全力で支援いたします。これまでのデザインベースのホームページ制作だけでは結果に繋がりにくく、コンテンツSEOとデザインを両立したホームページ集客支援を弊社では心がけております。SEO対策やホームページ制作といったWEB全般のお悩みはお気軽にご相談ください！</p>
@@ -350,10 +257,11 @@
     </div>
   </section>
   <!-- end seo -->
+  
   <section id="reason">
     <div class="reason_inr">
       <div class="reason_inr_box">
-        <h2>高クオリティなホームページをつくります。</h2>
+        <h2 class="m_animation_1"><span class="en">challenge</span>代理店には頼らない<br class="sp">新しい独自フロー</h2>
         <ul class="col2">
           <li>
            <h4>代理店に頼らない独自集客をするホームページ制作会社です</h4>
@@ -367,7 +275,7 @@
         </ul>
       </div>
       <div class="reason_inr_box">
-        <h2>圧倒的なコスパを実現。</h2>
+        <h2 class="m_animation_1"><span class="en">GUIDELINE</span>圧倒的なコスパを実現。</h2>
         <ul class="col2">
           <li>
            <h4>ガイドラインの徹底活用</h4>
@@ -382,7 +290,7 @@
         </ul>
       </div>
       <div class="reason_inr_box">
-        <h2>他のホームページ制作会社とは違います。</h2>
+        <h2 class="m_animation_1"><span class="en">strength</span>他のホームページ制作会社とは違います。</h2>
         <ul class="col2">
           <li>
             <h4>リスティング広告の有資格者がサポート</h4>
@@ -396,38 +304,9 @@
       </div>
     </div>
   </section>
-  <section id="flow">
-    <div class="flow_inr">
-      <h2>お申し込みから制作、<br class="sp">公開までの流れ</h2>
-      <ul class="col4">
-        <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step1.png" alt="step1"></figure>
-          <h4>お申し込み</h4>
-          <p>まずは、お問合せフォームから「どんなホームページを作りたいか」をお聞かせください。</p>
-        </li>
-        <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step2.png" alt="step1"></figure>
-          <h4>ヒアリング</h4>
-          <p>実際に面談で打ち合わせなどを行い、ホームページの目的やターゲット顧客・コンテンツなどの必要な情報をお聞かせください。</p>
-        </li>
-        <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step3.png" alt="step1"></figure>
-          <h4>ご確認</h4>
-          <p>お客様の原稿をもとにホームページをクオリティの高い効果的なデザインを制作します。</p>
-        </li>
-        <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step4.png" alt="step1"></figure>
-          <h4>納品</h4>
-          <p>納品はゴールではなくスタートですので、ホームページを更新・追加して育てていきましょう。</p>
-        </li>
-      </ul>
-      <div class="view_btn"><a class="arrow" href="#contact">相談してみる</a></div>
-    </div>
-  </section>
-  <!-- end flow -->
   <section id="faq">
     <div class="faq_inr">
-      <h2>よくあるご質問</h2>
+      <h2 class="m_animation_1"><span class="en">Q&amp;A</span>よくあるご質問</h2>
       <ul class="col2">
         <li>
           <h4>ホームページに関する知識がないのですが。</h4>
@@ -454,21 +333,57 @@
           <p>創業プランはお客様からいただいた原稿を元に弊社がオリジナルでデザインを⾏いますが、デザインの修正は基本的にはできませんので、オプションとなります。</p>
         </li>
         <li>
-          <h4>49,800円でホームページが制作<br>できるのですか。</h4>
-          <p>はい、ご安⼼ください。制作費は基本的に49,800円（＋税）以外は⼀切かかりません。オプションとしてかかるものは「撮影」「取材・原稿作成」「追加ページ」などがございますが、必要なものは別途お⾒積書を提出いたします。制作事例、お客様の声、スタッフ紹介など各カテゴリーの追加は1件につき10,000円+ 税のオプション追加費⽤がかかります。</p>
+          <h4>49,800円でホームページが<br class="sp">制作できるのですか。</h4>
+          <p>はい、ご安⼼ください。創業プランの制作費は基本的に49,800円（＋税）以外はかかりません。オプションとしてかかるものは「撮影」「取材・原稿作成」「追加ページ」などがございますが、必要なものは別途お⾒積書を提出いたします。制作事例、お客様の声、スタッフ紹介など各カテゴリーの追加は1件につき10,000円+ 税のオプション追加費⽤がかかります。</p>
         </li>
         <li>
           <h4>ホームページの改修・リニューアルも<br class="sp">できますか？</h4>
           <p>もちろんホームページの改修・リニューアルもお受けしております。お問い合わせフォームよりご相談ください。</p>
         </li>
+        <li>
+          <h4>SEO対策って何をするんですか？</h4>
+          <p>検索結果で狙ったキーワードを上位表示させるSEO対策ですが、検索結果で上位表示させるために内部施策を行います。検索結果で上位表示したいキーワードを決定し、そのキーワード軸とした関連キーワードのツリーマップなども制作します。</p>
+        </li>
+        <li>
+          <h4>コンテンツSEOってなんですか？</h4>
+          <p>コンテンツSEOとは、狙ったキーワード似合わせて投稿形式でユーザーにとって有益な情報を提供することを指します。コンテンツSEOを行うことでTOPページ以外のページでも集客を行うことができ、ロングテールでユーザーを獲得する施策として効果的です。</p>
+        </li>
       </ul>
     </div>
   </section>
+  <section id="flow">
+    <div class="flow_inr">
+      <h2 class="m_animation_1"><span class="en">FLOW</span>お申し込みから制作、<br class="sp">公開までの流れ</h2>
+      <ul class="col4">
+        <li>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step1.png" alt="step1"></figure>
+          <h4>お申し込み</h4>
+          <p>まずは、お問合せフォームから「どんなホームページを作りたいか」をお聞かせください。</p>
+        </li>
+        <li>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step2.png" alt="step1"></figure>
+          <h4>ヒアリング</h4>
+          <p>実際に面談で打ち合わせなどを行い、ホームページの目的やターゲット顧客・コンテンツなどの必要な情報をお聞かせください。</p>
+        </li>
+        <li>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step3.png" alt="step1"></figure>
+          <h4>ご確認</h4>
+          <p>お客様の原稿をもとにホームページをクオリティの高い効果的なデザインを制作します。</p>
+        </li>
+        <li>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step4.png" alt="step1"></figure>
+          <h4>納品</h4>
+          <p>納品はゴールではなくスタートですので、ホームページを更新・追加して育てていきましょう。</p>
+        </li>
+      </ul>
+      <div class="view_btn"><a class="arrow" href="#contact">相談してみる</a></div>
+    </div>
+  </section>
+  <!-- end flow -->
   <!-- end faq -->
   <section id="contact">
     <div class="contact_inr">
-      <h3><span>CONTACT</span></h3>
-      <h2>お問い合わせ</h2>
+      <h2 class="m_animation_1"><span class="en">CONTACT</span>お問い合わせ</h2>
       <div id="document" class="contact_inr_input"><!--本番公開はkey19 ローカル環境は6070-->
         <?php echo do_shortcode( '[mwform_formkey key="19"]' ); ?>
       </div>
@@ -477,7 +392,7 @@
   <!-- end contact-->
   <section id="news">
   <div class="news_inr">
-    <h2>ニュース<span>ホームページに関するあれこれを発信しております。</span></h2>
+    <h2 class="m_animation_1"><span class="en">NEWS</span>ニュース<span>ホームページに関するあれこれを発信しております。</span></h2>
     <ul class="col2">
       <?php
       $loop = new WP_Query (array(

@@ -30,19 +30,59 @@
         @include fz(14);
         font-weight: normal;
       }
-      .view_btn{
-        width: 200px;
-        text-align: center;
-        margin-bottom: 2.5em;
+      .btnArea {
+        margin-bottom: 5em;
+        .view_btn{
+          width: 200px;
+          text-align: center;
+          margin: 1em;
+          &.more {
+            width: 250px;
+            a {
+              &:after {
+                top: 36%;
+                transform: rotate(135deg);
+              }
+            }
+          }
+        }
       }
       article {
         position: relative;
         margin-bottom: 4em;
         h3 {
-          color: #262626;
-          background: #eef9ff;
+          color: #fff;
           font-weight: bold;
           padding: 1.2%;
+          @include fz(16);
+          @include mq(sp) {
+            padding: 2%;
+            font-size: 4.5vw;
+          }
+          &.h3_1 {
+            background: $gradation;
+          }
+          &.h3_2 {
+            background: linear-gradient(to right, #b564cd, #d03c53);
+          }
+          &.h3_3 {
+            background: linear-gradient(to right, #64cd84, #c7d03c);
+          }
+          &.h3_4 {
+            background: linear-gradient(to right, #d3925a, #bfd03c);
+          }
+          &.h3_5 {
+            background: linear-gradient(to right, #000000, #5c5c5c);
+          }
+        }
+        .view_btn {
+          width: 200px;
+          text-align: center;
+          display: block;
+          margin: 2rem auto 4rem 0;
+          @include mq(sp) {
+            margin: 1rem auto 3rem;
+          }
         }
         figure {
             position: absolute;
@@ -66,6 +106,7 @@
           @include fz(13);
           display: inline-block;
           line-height: 1.8;
+          margin-bottom: 1em;
           li {
             position: relative;
             padding-left: 24px;
@@ -86,14 +127,26 @@
           }
         }
         ul.caution {
-          @include fz(12);
+          @include fz(13);
           display: inline-block;
           line-height: 1.8;
           color: #676767;
           margin-top: .5em;
           li{
+            a {
+              display: inline-block;
+              color: #3cb4d1;
+              border-bottom: 1px solid #3cb4d1;
+            }
+            span {
+              font-weight: bold;
+              padding: 4px;
+              background: rgba(209, 201, 60, 0.33);
+            }
             &:before {
               content: '・';
+              margin-left: -1em;
+              text-indent: 1em;
             }
           }
         }
@@ -101,8 +154,8 @@
           @include fz(28);
           font-weight: bold;
           margin-top: .2em;
-          @include mq(sptb) {
-            margin-top: 1em;
+          @include mq(sp) {
+            margin: 2em 0 1.5em;
           }
           span {
             @include fz(14);
@@ -113,7 +166,14 @@
             @include fz(12);
           }
         }
-        
+        p.caption {
+          margin-bottom: 2em;
+          a {
+            color: #3cb4d1;
+            border-bottom: 1px solid #3cb4d1;
+            display: inline-block;
+          }
+        }
         .plan_table_1,
         .plan_table_2
         {
@@ -134,26 +194,31 @@
             }
             dt,dd {
               padding: 2%;
+              small {
+                @include fz(10);
+                display: inline-block;
+                vertical-align: top;
+                margin-left: .5em;
+              }
             }
             dt {
               background: #f5f5f5;
               font-weight: bold;
               @include mq(sptb) {
-                width: 45%;
-              } 
+                width: 50%;
+              }
             }
             dd {
               border-right: 1px solid #e6e6e6;
               @include mq(sptb) {
-                width: 28%;
-                text-align: center;
+                width: 50%;
               }
             }
           }
         }
         .plan_table_1 {
           dt,dd {
-            width: 33.333%;
+            width: 50%;
           }
         }
         .plan_table_2 {
