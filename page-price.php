@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: price
@@ -6,6 +5,7 @@ Template Name: price
 ?>
 <?php get_header(); ?>
  <div id="modal-main">
+ <p>aaa</p>
   <h4>お支払い方法</h4>
   <h3>クレジットカード決済可能！</h3>
   <div class="cards">
@@ -76,7 +76,7 @@ Template Name: price
 </div>
   <section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
   <?php include_once("nav.php"); ?>
-  <section class="m_ttlArea_1">
+<section class="m_ttlArea_1">
  <div id="breadcrumb">
   <ul>
     <li><a href="<?php echo home_url(); ?>/">TOP</a></li>

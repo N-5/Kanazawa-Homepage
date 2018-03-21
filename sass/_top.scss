@@ -505,10 +505,17 @@
       }
 	}
 	#contents {
-		padding: 60px 0;
+      padding: 60px 0;
       background: url(../images/price_bg_pc.jpg) no-repeat;
       background-size: cover;
       background-attachment: fixed;
+      &:before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
 		.contents_inr {
 			@include grobal_inr;
 			text-align: center;
