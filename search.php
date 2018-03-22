@@ -1,21 +1,20 @@
 <?php get_header(); ?>
-<section id="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on"><img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off"></section>
 <?php include_once("nav.php"); ?>
 <section class="m_ttlArea_1">
- <div id="breadcrumb">
-  <ul>
-    <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
-    <li>&gt;</li>
-    <li>検索結果</li>
-  </ul>
-</div>
+  <div id="breadcrumb">
+    <ul>
+      <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
+      <li>&gt;</li>
+      <li>検索結果</li>
+    </ul>
+  </div>
   <h1>SEARCH<span>検索結果</span></h1>
 </section>
+
 <section id="news_archive">
   <div class="news_archive_inr">
     <div class="post_list">
       <h2><span><?php the_search_query(); ?></span>の検索結果 : <?php echo $wp_query->found_posts; ?>件</h2>
-      <!-- 投稿情報 loop -->
       <ul class="col3">
       <?php if(have_posts()): while(have_posts()):the_post(); ?>
       <li <?php if( $days > $news ){ print 'class="new"'; } ?>>
@@ -48,10 +47,10 @@
         global $post;
         $args = array(
           'numberposts' => 6,
-          'post_type' => 'news', //カスタム投稿タイプ名
-          'taxonomy' => 'newscat', //タクソノミー名 ←ここが追加
-          'orderby' => 'rand', //ランダム表示
-          'post__not_in' => array($post->ID) //表示中の記事を除外
+          'post_type' => 'news', 
+          'taxonomy' => 'newscat',
+          'orderby' => 'rand',
+          'post__not_in' => array($post->ID)
         );
         ?>
         <ul class="col3">
@@ -71,7 +70,6 @@
         <?php else : ?>
         <p>関連アイテムはまだありません。</p>
         <?php endif; wp_reset_postdata(); ?>
-        <!--ここまで-->
       </section>
       <?php endif; ?>
     </div>
