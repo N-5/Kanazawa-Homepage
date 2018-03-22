@@ -1,9 +1,5 @@
 
 <?php get_header(); ?>
-  <section id="menu_btn">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off">
-  </section>
   <?php include_once("nav.php"); ?>
   <section class="m_ttlArea_1">
    <div id="breadcrumb">
