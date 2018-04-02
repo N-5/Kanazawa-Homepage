@@ -508,7 +508,9 @@
       padding: 60px 0;
       background: url(../images/price_bg_pc.jpg) no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      @include mq(pc) {
+        background-attachment: fixed;
+      }
       &:before {
         content: '';
         display: block;
@@ -747,8 +749,10 @@
 	#faq {
       padding: 60px 0;
       background: url(../images/qa_back.jpg) no-repeat;
-      background-attachment: fixed;
       background-size: cover;
+      @include mq(pc) {
+        background-attachment: fixed;
+      }
 		.faq_inr {
 			text-align: center;
 			@include grobal_inr;
