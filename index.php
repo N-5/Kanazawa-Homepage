@@ -2,11 +2,6 @@
 <!-- end modal-main -->
 <?php include_once("nav.php"); ?>
 <main id="top" class="content">
-  <section id="menu_btn">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn.png" class="on" alt="MENU">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/top_menu_btn_close.png" class="off" alt="CLOSE">
-  </section>
-  <!-- end SP MENU -->
   <section id="hero" class="hero">
     <ul class="hero_slider">
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/kv_img_01_pc.jpg" class="imgchange" alt="北陸<?php echo $place; ?>の<?php echo $city; ?>でホームページを制作を依頼するなら"></li>
@@ -21,15 +16,17 @@
     </div>
   </section>
   <!-- end hero -->
+  
   <section id="lead">
     <div class="lead_inr">
       <h2 class="m_animation_1"><span class="en">MISSION</span>クリエイティブによる、<br>経営改善を第一に考える。</h2>
       <p>弊社は⾦沢で2015年に創業したばかりのまだ新しいベンチャー企業です。コンサルティングを得意とするWEBアナリストの代表と、<br>ホームページ制作・デザイン・動画制作といったクリエイティブフィールドの第⼀線で活躍してきたWEBクリエイターの３⼈で活動をしております。<br>クリエイティブによる経営改善を第一に考えるホームページ制作会社です。<br></p>
-      <p>この創業パックは企画・制作段階での徹底的な効率化によって、<?php echo $place; ?>・<?php echo $city; ?>トップクラスのクオリティを保ちながら、最安値プランでは <span>49,800円</span>という<br><?php echo $city; ?>のホームページ制作会社の中では圧倒的低価格でホームページを制作することが可能になりました。</p>
+      <p>この創業パックは企画・制作段階での徹底的な効率化によって、<?php echo $place; ?>・<?php echo $city; ?>トップクラスのクオリティを保ちながら、最安値プランでは <span>49,800円</span>という<br><?php echo $city; ?>のホームページ制作会社の中では圧倒的低価格でホームページを制作することが可能になりました。<br>また本気でWEBからの集客を考えられているお客様からは、しっかりとしたSEO対策が可能なゴールドプラン以上も大変好評です。</p>
       <p>弊社の創業パックは、すぐにWEB集客のできるホームページによって北陸をHOTにするベンチャー企業を応援します！</p>
     </div>
   </section>
   <!-- end lead -->
+  
   <section id="price">
     <div class="price_inr">
       <h2 class="m_animation_1">制作プラン<span>問題解決に沿った柔軟なプランをご用意しております。</span></h2>
@@ -150,6 +147,7 @@
     </div>
   </section>
   <!-- end price -->
+  
   <section id="concept">
     <div class="concept_inr">
       <h2 class="m_animation_1"><span class="en">Our Specialization</span>ご新規での<br class="sp">ホームページサイト制作、<br class="sp">サイトリニューアルも。</h2>
@@ -161,7 +159,8 @@
       <div class="view_btn"><a class="arrow" href="#contact">相談してみる</a></div>
     </div>
   </section>
-  <!-- end reason -->
+  <!-- end concept -->
+  
   <section id="contents">
     <div class="contents_inr">
       <h2 class="m_animation_1"><span class="en">OPTION</span>選べるオプションはさまざま。<br>お客様に合ったソリューションを<br class="sp">ご提案させていただきます。<br class="sp"><span>創業パックプランであれば最⼤６つお選びいただくことが可能です。</span></h2>
@@ -217,7 +216,8 @@
       </ul>
     </div>
   </section>
-  <!-- end concept -->
+  <!-- end contents -->
+  
   <section id="seo">
     <div class="seo_inr">
       <h2 class="m_animation_1"><span class="en">SPPORT</span>どこよりも徹底的に。<br>あなたのホームページを<br class="sp">サポートします。</h2>
@@ -230,7 +230,6 @@
           <span>※ また検索結果が上位に表示されなければ、費用は一切いただきませんのでご安心ください。</span></p>
       </div>
     </div>
-    
     <div class="lead">
       <i><img src="<?php echo get_template_directory_uri(); ?>/images/seo2_icon.png" alt=""></i>
       <div>
@@ -304,6 +303,8 @@
       </div>
     </div>
   </section>
+  <!-- end reason -->
+  
   <section id="faq">
     <div class="faq_inr">
       <h2 class="m_animation_1"><span class="en">Q&amp;A</span>よくあるご質問</h2>
@@ -333,16 +334,26 @@
           <p>創業プランはお客様からいただいた原稿を元に弊社がオリジナルでデザインを⾏いますが、デザインの修正は基本的にはできませんので、オプションとなります。</p>
         </li>
         <li>
-          <h4>49,800円でホームページが制作<br>できるのですか。</h4>
-          <p>はい、ご安⼼ください。制作費は基本的に49,800円（＋税）以外は⼀切かかりません。オプションとしてかかるものは「撮影」「取材・原稿作成」「追加ページ」などがございますが、必要なものは別途お⾒積書を提出いたします。制作事例、お客様の声、スタッフ紹介など各カテゴリーの追加は1件につき10,000円+ 税のオプション追加費⽤がかかります。</p>
+          <h4>49,800円でホームページが<br class="sp">制作できるのですか。</h4>
+          <p>はい、ご安⼼ください。創業プランの制作費は基本的に49,800円（＋税）以外はかかりません。オプションとしてかかるものは「撮影」「取材・原稿作成」「追加ページ」などがございますが、必要なものは別途お⾒積書を提出いたします。制作事例、お客様の声、スタッフ紹介など各カテゴリーの追加は1件につき10,000円+ 税のオプション追加費⽤がかかります。</p>
         </li>
         <li>
           <h4>ホームページの改修・リニューアルも<br class="sp">できますか？</h4>
           <p>もちろんホームページの改修・リニューアルもお受けしております。お問い合わせフォームよりご相談ください。</p>
         </li>
+        <li>
+          <h4>SEO対策って何をするんですか？</h4>
+          <p>検索結果で狙ったキーワードを上位表示させるSEO対策ですが、検索結果で上位表示させるために内部施策を行います。検索結果で上位表示したいキーワードを決定し、そのキーワード軸とした関連キーワードのツリーマップなども制作します。</p>
+        </li>
+        <li>
+          <h4>コンテンツSEOってなんですか？</h4>
+          <p>コンテンツSEOとは、狙ったキーワード似合わせて投稿形式でユーザーにとって有益な情報を提供することを指します。コンテンツSEOを行うことでTOPページ以外のページでも集客を行うことができ、ロングテールでユーザーを獲得する施策として効果的です。</p>
+        </li>
       </ul>
     </div>
   </section>
+  <!-- end faq -->
+  
   <section id="flow">
     <div class="flow_inr">
       <h2 class="m_animation_1"><span class="en">FLOW</span>お申し込みから制作、<br class="sp">公開までの流れ</h2>
@@ -372,7 +383,7 @@
     </div>
   </section>
   <!-- end flow -->
-  <!-- end faq -->
+  
   <section id="contact">
     <div class="contact_inr">
       <h2 class="m_animation_1"><span class="en">CONTACT</span>お問い合わせ</h2>
@@ -382,76 +393,77 @@
     </div>
   </section>
   <!-- end contact-->
+  
   <section id="news">
-  <div class="news_inr">
-    <h2 class="m_animation_1"><span class="en">NEWS</span>ニュース<span>ホームページに関するあれこれを発信しております。</span></h2>
-    <ul class="col2">
-      <?php
-      $loop = new WP_Query (array(
-        'post_type'			=> 'news',
-        'order'				=> 'DESC',
-        'posts_per_page'	=> 2,
-      ));
-      while ($loop -> have_posts()) : $loop -> the_post();
-      ?>
-      <li <?php if( $days > $news ){ print 'class="new"'; } ?>>
-        <a href="<?php the_permalink(); ?>">
-          <figure>
-            <?php if (has_post_thumbnail()) : ?>
-            <?php $title= get_the_title(); the_post_thumbnail('list-thumb' , array( 'alt' =>$title, 'title' => $title)); ?>
-            <?php else : ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-noimage.jpg" alt="NoImage" />
-            <?php endif ; ?>
-          </figure>
-          <div class="textbox">
-            <div class="info">
-              <?php if(is_object_in_term( $post->ID, 'newscat')): ?>
-              <i><?php $terms = get_the_terms($post->ID, 'newscat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?></i>　|<?php endif ; ?>
-              <h4><?php the_title(); ?></h4>
-              <time>
-                <?php the_time('Y.m.d'); ?>
-              </time>
-            </div>
-          </div>
-        </a>
-      </li>
-      <?php endwhile; ?>
-    </ul>
-    <ul class="col4">
-      <?php
-      $loop = new WP_Query (array(
+    <div class="news_inr">
+      <h2 class="m_animation_1"><span class="en">NEWS</span>ニュース<span>ホームページに関するあれこれを発信しております。</span></h2>
+      <ul class="col2">
+        <?php
+        $loop = new WP_Query (array(
           'post_type'			=> 'news',
           'order'				=> 'DESC',
-          'posts_per_page'	=> 4,
-          'offset' => 2
-      ));
-      while ($loop -> have_posts()) : $loop -> the_post();
-      ?>
-      <li <?php if( $days > $news ){ print 'class="new"'; } ?>>
-        <a href="<?php the_permalink(); ?>">
-          <figure>
-            <?php if (has_post_thumbnail()) : ?>
-            <?php $title= get_the_title(); the_post_thumbnail('list-thumb' , array( 'alt' =>$title, 'title' => $title)); ?>
-            <?php else : ?>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-noimage.jpg" alt="NoImage" />
-            <?php endif ; ?>
-          </figure>
-          <div class="textbox">
-            <div class="info">
-              <?php if(is_object_in_term( $post->ID, 'newscat')): ?>
-              <i><?php $terms = get_the_terms($post->ID, 'newscat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?></i>　|<?php endif ; ?>
-              <h4><?php the_title(); ?></h4>
-              <time>
+          'posts_per_page'	=> 2,
+        ));
+        while ($loop -> have_posts()) : $loop -> the_post();
+        ?>
+        <li <?php if( $days > $news ){ print 'class="new"'; } ?>>
+          <a href="<?php the_permalink(); ?>">
+            <figure>
+              <?php if (has_post_thumbnail()) : ?>
+              <?php $title= get_the_title(); the_post_thumbnail('list-thumb' , array( 'alt' =>$title, 'title' => $title)); ?>
+              <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-noimage.jpg" alt="NoImage" />
+              <?php endif ; ?>
+            </figure>
+            <div class="textbox">
+              <div class="info">
+                <?php if(is_object_in_term( $post->ID, 'newscat')): ?>
+                <i><?php $terms = get_the_terms($post->ID, 'newscat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?></i>　|<?php endif ; ?>
+                <h4><?php the_title(); ?></h4>
+                <time>
                   <?php the_time('Y.m.d'); ?>
-              </time>
+                </time>
+              </div>
             </div>
-          </div>
-        </a>
-      </li>
-      <?php endwhile; ?>
-    </ul>
-    <div class="view_btn"><a class="arrow" href="/news/">もっと見る</a></div>
-  </div>
+          </a>
+        </li>
+        <?php endwhile; ?>
+      </ul>
+      <ul class="col4">
+        <?php
+        $loop = new WP_Query (array(
+            'post_type'			=> 'news',
+            'order'				=> 'DESC',
+            'posts_per_page'	=> 4,
+            'offset' => 2
+        ));
+        while ($loop -> have_posts()) : $loop -> the_post();
+        ?>
+        <li <?php if( $days > $news ){ print 'class="new"'; } ?>>
+          <a href="<?php the_permalink(); ?>">
+            <figure>
+              <?php if (has_post_thumbnail()) : ?>
+              <?php $title= get_the_title(); the_post_thumbnail('list-thumb' , array( 'alt' =>$title, 'title' => $title)); ?>
+              <?php else : ?>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-noimage.jpg" alt="NoImage" />
+              <?php endif ; ?>
+            </figure>
+            <div class="textbox">
+              <div class="info">
+                <?php if(is_object_in_term( $post->ID, 'newscat')): ?>
+                <i><?php $terms = get_the_terms($post->ID, 'newscat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?></i>　|<?php endif ; ?>
+                <h4><?php the_title(); ?></h4>
+                <time>
+                    <?php the_time('Y.m.d'); ?>
+                </time>
+              </div>
+            </div>
+          </a>
+        </li>
+        <?php endwhile; ?>
+      </ul>
+      <div class="view_btn"><a class="arrow" href="/news/">もっと見る</a></div>
+    </div>
   </section>
   <!-- end news -->
 </main>
