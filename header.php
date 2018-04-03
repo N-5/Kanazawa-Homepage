@@ -23,8 +23,14 @@
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <link rel="icon" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <!-- /icon -->
-    <link rel="stylesheet" href="https://use.typekit.net/uhq8ela.css">
-
+    
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <!-- /icon -->
+    
+    <?php if(is_home() && is_front_page()) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/document-min.css">
+    <?php endif; ?>
     <!-- wp_head -->
     <?php wp_head(); ?>
     <!-- /wp_head -->
@@ -37,7 +43,7 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/script/respond.js"></script>
     <![endif]-->
   </head>
-  <!-- heatmap script-->
+  <!-- heatmap-->
   <script type="text/javascript">
     window._pt_lt = new Date().getTime();
     window._pt_sp_2 = [];
@@ -52,11 +58,7 @@
       s.parentNode.insertBefore(atag, s); s.parentNode.insertBefore(stag, s);
     })();
   </script>
-  <?php if(is_home() && is_front_page()) : ?>
-  <!-- TOP ONLY -->
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/document-min.css">
-  <?php endif; ?>
-  
+  <!-- /heatmap-->  
 <body <?php body_class(); ?>>    
   <!-- noscript -->
   <noscript><div class="noscript">サイトを快適に利用するためには、JavaScriptを有効にしてください。</div></noscript>
@@ -71,18 +73,23 @@
     </div>
     <header>
      <div class="header_inr">
-       <h1><a href="<?php echo home_url(); ?>">KANAZAWA HOMEPAGE.com</a></h1>
-       <div id="searchbtn">
-         <a data-target="con1" class="modal-open">
+        <h1><a href="<?php echo home_url(); ?>">KANAZAWA HOMEPAGE.com</a></h1>
+        <div id="searchbtn">
+          <a data-target="con1" class="modal-open">
          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 16 15.3" style="enable-background:new 0 0 16 15.3;" xml:space="preserve"><g><g><rect y="-14.3" class="st0" width="16" height="44"/></g><g><circle class="st0" cx="6.5" cy="6.2" r="4.9"/><path class="st1" d="M15.4,14.3l-4.2-4.2c0.9-1.1,1.4-2.4,1.4-3.9c0-3.3-2.7-6.1-6.1-6.1S0.4,2.9,0.4,6.2s2.7,6.1,6.1,6.1 c1.5,0,2.8-0.5,3.9-1.4l4.2,4.2L15.4,14.3z M6.5,11.2c-2.7,0-4.9-2.2-4.9-4.9s2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9S9.2,11.2,6.5,11.2z"/></g></g>
          </svg>
          </a>
-       </div>
-       <div id="con1" class="modal-content">
-         <h3>記事を検索</h3>
-         <div class="search"><?php get_search_form(); ?></div>
-         <p><a class="modal-close">閉じる<span></span></a></p>
-      </div>
+        </div>
+        <div id="con1" class="modal-content">
+          <h3>記事を検索</h3>
+          <div class="search"><?php get_search_form(); ?></div>
+          <p><a class="modal-close">閉じる<span></span></a></p>
+        </div>
+        <div id="menu_btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </header>

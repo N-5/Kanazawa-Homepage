@@ -8,7 +8,7 @@
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/kv_img_02_pc.jpg" class="imgchange" alt="創業者に嬉しい格安ホームページ制作会社"></li>
     </ul>
     <div class="hero_banner">
-      <h3>ホームページ制作に<br class="sp">新しいフツーを。</h3>
+      <h2>ホームページ制作に<br class="sp">新しいフツーを。</h2>
       <ul>
         <li><a href="#price">驚きの新プランを見る</a></li>
         <li><a href="#contact">相談してみる</a></li>
@@ -19,7 +19,10 @@
   
   <section id="lead">
     <div class="lead_inr">
-      <h2 class="m_animation_1"><span class="en">MISSION</span>クリエイティブによる、<br>経営改善を第一に考える。</h2>
+      <h2>
+        <span class="en">SOLUTION</span>
+        新規ホームページ制作、<br>サイトリニューアルをお悩みなら
+      </h2>
       <p>弊社は⾦沢で2015年に創業したばかりのまだ新しいベンチャー企業です。コンサルティングを得意とするWEBアナリストの代表と、<br>ホームページ制作・デザイン・動画制作といったクリエイティブフィールドの第⼀線で活躍してきたWEBクリエイターの３⼈で活動をしております。<br>クリエイティブによる経営改善を第一に考えるホームページ制作会社です。<br></p>
       <p>この創業パックは企画・制作段階での徹底的な効率化によって、<?php echo $place; ?>・<?php echo $city; ?>トップクラスのクオリティを保ちながら、最安値プランでは <span>49,800円</span>という<br><?php echo $city; ?>のホームページ制作会社の中では圧倒的低価格でホームページを制作することが可能になりました。<br>また本気でWEBからの集客を考えられているお客様からは、しっかりとしたSEO対策が可能なゴールドプラン以上も大変好評です。</p>
       <p>弊社の創業パックは、すぐにWEB集客のできるホームページによって北陸をHOTにするベンチャー企業を応援します！</p>
@@ -29,7 +32,10 @@
   
   <section id="price">
     <div class="price_inr">
-      <h2 class="m_animation_1">制作プラン<span>問題解決に沿った柔軟なプランをご用意しております。</span></h2>
+      <h2>
+        制作プラン
+        <span>問題解決に沿った柔軟なプランをご用意しております。</span>
+      </h2>
       <div class="price_sp sp">
         <ul>
           <li>
@@ -150,7 +156,7 @@
   
   <section id="concept">
     <div class="concept_inr">
-      <h2 class="m_animation_1"><span class="en">Our Specialization</span>ご新規での<br class="sp">ホームページサイト制作、<br class="sp">サイトリニューアルも。</h2>
+      <h2><span class="en">Our Specialization</span>高クオリティな<br class="sp">サイトをお作りいたします</h2>
       <ul class="col3">
         <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/concept_li_img1.png"></figure><p>WordPressによる<br>トップクラスの<span>SEO対策</span></p></li>
         <li><figure><img src="<?php echo get_template_directory_uri(); ?>/images/concept_li_img2.png"></figure><p><span>レスポンシブ</span><br>WEBデザイン(スマホ対応)</p></li>
@@ -163,7 +169,12 @@
   
   <section id="contents">
     <div class="contents_inr">
-      <h2 class="m_animation_1"><span class="en">OPTION</span>選べるオプションはさまざま。<br>お客様に合ったソリューションを<br class="sp">ご提案させていただきます。<br class="sp"><span>創業パックプランであれば最⼤６つお選びいただくことが可能です。</span></h2>
+      <h2>
+        <span class="en">OPTION</span>
+        選べるオプションはさまざま。<br class="sp">
+        お客様に合ったプランをご用意<br class="sp">
+        <span>創業プランであれば最⼤６つお選びいただくことが可能です。</span>
+      </h2>
       <ul class="col2">
         <li>
           <figure>01</figure>
@@ -220,7 +231,10 @@
   
   <section id="seo">
     <div class="seo_inr">
-      <h2 class="m_animation_1"><span class="en">SPPORT</span>どこよりも徹底的に。<br>あなたのホームページを<br class="sp">サポートします。</h2>
+      <h2>
+        <span class="en">SPPORT</span>
+        どこよりも徹底的に。<br>あなたのホームページを<br class="sp">サポートします。
+      </h2>
       <div class="lead">
         <i><img src="<?php echo get_template_directory_uri(); ?>/images/seo_icon.png" alt=""></i>
           <div><h3><?php echo $city; ?>ホームページ制作.COMのSEO対策サービスは内部対策中心で、<br>他者の外部リンクに頼ったSEO対策は行いません。</h3>
@@ -260,7 +274,7 @@
   <section id="reason">
     <div class="reason_inr">
       <div class="reason_inr_box">
-        <h2 class="m_animation_1"><span class="en">challenge</span>代理店には頼らない<br class="sp">新しい独自フロー</h2>
+        <h2><span class="en">challenge</span>代理店には頼らない<br class="sp">新しい独自フロー</h2>
         <ul class="col2">
           <li>
            <h4>代理店に頼らない独自集客をするホームページ制作会社です</h4>
@@ -274,7 +288,7 @@
         </ul>
       </div>
       <div class="reason_inr_box">
-        <h2 class="m_animation_1"><span class="en">GUIDELINE</span>圧倒的なコスパを実現。</h2>
+        <h2><span class="en">GUIDELINE</span>圧倒的なコスパを実現。</h2>
         <ul class="col2">
           <li>
            <h4>ガイドラインの徹底活用</h4>
@@ -289,7 +303,7 @@
         </ul>
       </div>
       <div class="reason_inr_box">
-        <h2 class="m_animation_1"><span class="en">strength</span>他のホームページ制作会社とは違います。</h2>
+        <h2><span class="en">strength</span>他のホームページ制作会社とは違います。</h2>
         <ul class="col2">
           <li>
             <h4>リスティング広告の有資格者がサポート</h4>
@@ -307,7 +321,7 @@
   
   <section id="faq">
     <div class="faq_inr">
-      <h2 class="m_animation_1"><span class="en">Q&amp;A</span>よくあるご質問</h2>
+      <h2><span class="en">Q&amp;A</span>よくあるご質問</h2>
       <ul class="col2">
         <li>
           <h4>ホームページに関する知識がないのですが。</h4>
@@ -356,7 +370,7 @@
   
   <section id="flow">
     <div class="flow_inr">
-      <h2 class="m_animation_1"><span class="en">FLOW</span>お申し込みから制作、<br class="sp">公開までの流れ</h2>
+      <h2><span class="en">FLOW</span>お申し込みから制作、<br class="sp">公開までの流れ</h2>
       <ul class="col4">
         <li>
           <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step1.png" alt="step1"></figure>
@@ -386,7 +400,7 @@
   
   <section id="contact">
     <div class="contact_inr">
-      <h2 class="m_animation_1"><span class="en">CONTACT</span>お問い合わせ</h2>
+      <h2><span class="en">CONTACT</span>お問い合わせ</h2>
       <div id="document" class="contact_inr_input"><!--本番公開はkey19 ローカル環境は6070-->
         <?php echo do_shortcode( '[mwform_formkey key="19"]' ); ?>
       </div>
@@ -396,7 +410,7 @@
   
   <section id="news">
     <div class="news_inr">
-      <h2 class="m_animation_1"><span class="en">NEWS</span>ニュース<span>ホームページに関するあれこれを発信しております。</span></h2>
+      <h2><span class="en">NEWS</span>ニュース<span>ホームページに関するあれこれを発信しております。</span></h2>
       <ul class="col2">
         <?php
         $loop = new WP_Query (array(
