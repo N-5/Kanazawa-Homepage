@@ -16,7 +16,7 @@
   }
 }
 .m_ttlArea_1 {
-  background: $gradation;
+  background: linear-gradient(to right, #000000, #5c5c5c);
   @include mq(sp) {
     margin-bottom: 1em;
   }

@@ -1109,7 +1109,7 @@ a.page-numbers,
     transition: width 2s cubic-bezier(0.19, 1, 0.22, 1); }
 
 .m_ttlArea_1 {
-  background: linear-gradient(to right, #64c8cd, #3cb3d0); }
+  background: linear-gradient(to right, #000000, #5c5c5c); }
   @media screen and (max-width: 425px) {
     .m_ttlArea_1 {
       margin-bottom: 1em; } }
@@ -3445,7 +3445,7 @@ section.animation .m_animation_1:after {
       #price_detail .price_inner .content_1 article h3.h3_2 {
         background: linear-gradient(to right, #b564cd, #d03c53); }
       #price_detail .price_inner .content_1 article h3.h3_3 {
-        background: linear-gradient(to right, #64cd84, #c7d03c); }
+        background: linear-gradient(to right, #6467cd, #3c93d0); }
       #price_detail .price_inner .content_1 article h3.h3_4 {
         background: linear-gradient(to right, #d3925a, #bfd03c); }
       #price_detail .price_inner .content_1 article h3.h3_5 {
@@ -3574,6 +3574,9 @@ section.animation .m_animation_1:after {
           font-size: 12px; } }
     #price_detail .price_inner .content_1 article p.caption {
       margin-bottom: 2em; }
+      @media screen and (min-width: 426px) and (max-width: 999px) {
+        #price_detail .price_inner .content_1 article p.caption {
+          width: 50%; } }
       #price_detail .price_inner .content_1 article p.caption a {
         color: #3cb4d1;
         border-bottom: 1px solid #3cb4d1;
@@ -3643,7 +3646,8 @@ section.animation .m_animation_1:after {
               width: 50%; } }
         #price_detail .price_inner .content_1 article .plan_table_1 dl dd,
         #price_detail .price_inner .content_1 article .plan_table_2 dl dd {
-          border-right: 1px solid #e6e6e6; }
+          border-right: 1px solid #e6e6e6;
+          line-height: 1.4; }
           @media screen and (max-width: 999px) {
             #price_detail .price_inner .content_1 article .plan_table_1 dl dd,
             #price_detail .price_inner .content_1 article .plan_table_2 dl dd {
@@ -3664,13 +3668,13 @@ section.animation .m_animation_1:after {
       vertical-align: top; }
       @media screen and (max-width: 425px) {
         #price_detail .price_inner #table td, #price_detail .price_inner #table th {
-          font-size: 3.0625vw; } }
+          font-size: 2.625vw; } }
       @media screen and (min-width: 426px) and (max-width: 999px) {
         #price_detail .price_inner #table td, #price_detail .price_inner #table th {
-          font-size: 14px; } }
+          font-size: 12px; } }
       @media screen and (min-width: 1000px) {
         #price_detail .price_inner #table td, #price_detail .price_inner #table th {
-          font-size: 14px; } }
+          font-size: 12px; } }
     #price_detail .price_inner #table th {
       font-weight: bold; }
     @media screen and (max-width: 425px) {
