@@ -66,7 +66,7 @@
             background: linear-gradient(to right, #b564cd, #d03c53);
           }
           &.h3_3 {
-            background: linear-gradient(to right, #64cd84, #c7d03c);
+            background: linear-gradient(to right, #6467cd, #3c93d0);
           }
           &.h3_4 {
             background: linear-gradient(to right, #d3925a, #bfd03c);
@@ -168,6 +168,9 @@
         }
         p.caption {
           margin-bottom: 2em;
+          @include mq(tb) {
+            width: 50%;
+          }
           a {
             color: #3cb4d1;
             border-bottom: 1px solid #3cb4d1;
@@ -210,6 +213,7 @@
             }
             dd {
               border-right: 1px solid #e6e6e6;
+              line-height: 1.4;
               @include mq(sptb) {
                 width: 50%;
               }
@@ -239,7 +243,7 @@
       }
       td,th {
         padding: 1%;
-        @include fz(14);
+        @include fz(12);
         border: 1px solid #ccc;
         vertical-align: top;
       }

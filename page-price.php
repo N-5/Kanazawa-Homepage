@@ -82,7 +82,7 @@ Template Name: price
         <li>価格について</li>
       </ul>
     </div>
-    <h1>PRICE<span>価格</span></h1>
+    <h1>PRICE</h1>
   </section>
   <div id="price_detail">
     <div class="price_inner">
@@ -90,8 +90,10 @@ Template Name: price
         <h2>制作プラン</h2>
         <p>
         KANAZAWA HOPMEPAGE.comが自信をもってご提案させていただく制作プランをご紹介します。<br>
-        新規サイト制作、WEBサイトリニューアルなど誠意をもって解決させていただきます。<br>
-        WEBの知識がなくご不安な方もお問い合わせフォームよりお気軽にご相談ください。
+        ご提案させていただく以下のプランをベースにお客さまに合ったものにしていただくことも可能です。
+        新規サイト制作、WEBサイトリニューアルなど誠意をもって最後まで解決させていただきます。<br>
+        WEBの知識がなくてご不安な方もまずはご相談をお願いいたします。<br class="pc">
+        プランのご相談は、お問い合わせフォームよりお気軽にお願いいたします。
         </p>
         <div class="btnArea">
           <div class="view_btn"><a id="modal-open" class="arrow">お支払いについて</a></div>
@@ -100,7 +102,7 @@ Template Name: price
         <article>
           <h3 class="h3_1">創業プラン</h3>
           <p class="price"><span>初期費用</span>49,800<small>円</small></p>
-          <p class="caption">12個のメニューから6個を選択を自由に組み合わせ目的にあった1ページのサイトを制作。<br>創業者様ご愛用いただいているプランです。<br><a href="<?php echo home_url(); ?>#contents">メニューについてはこちら</a></p>
+          <p class="caption">12個のメニューから6個を選択を自由に組み合わせ目的にあった1ページのサイトを制作。<br class="pc">創業者様ご愛用いただいているプランです。<br><a href="<?php echo home_url(); ?>#contents">メニューについてはこちら</a></p>
           <ul class="detail">
             <li>簡単に更新ができるCMS(WordPress)で構築</li>
             <li>iPhoneなどのスマホにも対応</li>
@@ -137,7 +139,7 @@ Template Name: price
           <h3 class="h3_2">LPプラン</h3>
           <p class="price"><span>初期費用</span>180,000<small>円</small></p>
           <p class="caption">
-            商品やサービスのアピールに特化したLPページを１からデザインし、制作いたします。<br>
+            商品やサービスのアピールに特化したLPページを１からデザインし、制作いたします。<br class="pc">
             リスティング広告の有資格者が広告ランク・品質スコア・広告関連性などを意識した制作をご提案をいたします。
           </p>
           <ul class="detail">
@@ -170,7 +172,7 @@ Template Name: price
           <h3 class="h3_3">シンプルプラン</h3>
           <p class="price"><span>初期費用</span>388,000<small>円</small></p>
           <p class="caption">
-           トップを含め５ページを制作。本格的なホームページが制作できます。<br>
+           トップを含め５ページを制作。本格的なホームページが制作できます。<br class="pc">
            アクセス解析ツール設置といった要点をしっかり抑え制作を行いますので競合他社より上位表示したい！<br>
            といった方におすすめのプランです。
           </p>
@@ -251,7 +253,7 @@ Template Name: price
           <h3 class="h3_5">ブラックプラン</h3>
           <p class="price"><span>初期費用</span>1,180,000<small>円</small></p>
           <p class="caption">
-           専属のWebマーケティング担当者がホームページ制作から、<br>リリース後３ヶ月間Web集客ができるようになるまで立ち上がりの運用をサポートし、<br>SEOに強いコンテンツSEO記事も制作するビジネスコミット型のホームページ制作プランです。
+           専属のWebマーケティング担当者がホームページ制作から、<br>リリース後３ヶ月間Web集客ができるようになるまで立ち上がりの運用をサポートし、<br class="pc">SEOに強いコンテンツSEO記事も制作するビジネスコミット型のホームページ制作プランです。
           </p>
           <ul class="detail">
             <li>トップページ、下層含め10ページを制作</li>
