@@ -99,7 +99,7 @@ Template Name: price
           <div class="view_btn"><a id="modal-open" class="arrow">お支払いについて</a></div>
           <div class="view_btn more"><a href="#option" class="arrow">オプションについて</a></div>
         </div>
-        <article>
+        <article id="a1">
           <h3 class="h3_1">創業プラン</h3>
           <p class="price"><span>初期費用</span>49,800<small>円</small></p>
           <p class="caption">12個のメニューから6個を選択を自由に組み合わせ目的にあった1ページのサイトを制作。<br class="pc">創業者様ご愛用いただいているプランです。<br><a href="<?php echo home_url(); ?>#contents">メニューについてはこちら</a></p>
@@ -135,7 +135,7 @@ Template Name: price
           </ul>
           <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
         </article>
-        <article>
+        <article id="a2">
           <h3 class="h3_2">LPプラン</h3>
           <p class="price"><span>初期費用</span>180,000<small>円</small></p>
           <p class="caption">
@@ -168,7 +168,7 @@ Template Name: price
           </ul>
           <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
         </article>
-        <article>
+        <article id="a3">
           <h3 class="h3_3">シンプルプラン</h3>
           <p class="price"><span>初期費用</span>388,000<small>円</small></p>
           <p class="caption">
@@ -208,7 +208,7 @@ Template Name: price
           </ul>
           <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
         </article>
-        <article>
+        <article id="a4">
           <h3 class="h3_4">ゴールドプラン</h3>
           <p class="price"><span>初期費用</span>628,000<small>円</small></p>
           <p class="caption">
@@ -249,7 +249,7 @@ Template Name: price
           </ul>
           <div class="view_btn"><a href="<?php echo home_url(); ?>#contact" class="arrow">相談してみる</a></div>
         </article>
-        <article>
+        <article id="a5">
           <h3 class="h3_5">ブラックプラン</h3>
           <p class="price"><span>初期費用</span>1,180,000<small>円</small></p>
           <p class="caption">

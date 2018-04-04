@@ -130,21 +130,6 @@ $(window).on('load', function(){
 });
 
 
-//SP bottom bar fix
-$(function(){
-  var sp_nav = $('#sp_nav');
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        sp_nav.addClass('active');
-        ('#menu_btn').addClass('active');
-      } else {
-        sp_nav.removeClass('active');
-        ('#menu_btn').removeClass('active');
-      }
-    });
-});
-
-
 $(function(){
   var ua = navigator.userAgent;
   var headerHight = 100; //ヘッダの高さ
@@ -172,6 +157,20 @@ $(function(){
       return false;
     });
   };
+});
+
+$(function(){
+  var sp_nav = $('#sp_nav');
+  var sp_menu = $('#menu_btn');
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        sp_nav.addClass('active');
+        sp_menu.addClass('active');
+      } else {
+        sp_nav.removeClass('active');
+        sp_menu.removeClass('active');
+      }
+    });
 });
 
 //Pagetop script
@@ -271,3 +270,4 @@ $(function(){
     }
   });
 });
+

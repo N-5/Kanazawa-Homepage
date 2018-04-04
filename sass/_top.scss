@@ -54,7 +54,7 @@
   h4.m_h4_1 {
     font-family: $en;
     color: #7e7e7e;
-    width: 100%;
+    width: 80%;
     font-weight: bold;
     text-align: left;
     display: inline-block;
@@ -67,91 +67,154 @@
   
   #hero {
     position: relative;
-    .hero_slider {
-      @include mq(tb) {
-        padding-top: 8%;
-      }
-      .slick-list {
-        width: 100%;
-      }
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    @include mq(sp) {
+      height: 100vh;
     }
-    .hero_banner {
+    .hero_copy {
       position: absolute;
-      width: 100%;
-      text-align: center;
-      top: 20%;
+      top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
+      z-index: 2;
+      width: 100%;
+      text-align: center;
       @include mq(sp) {
-        bottom: 57%;
+        top: 30%;
       }
       h2 {
         color: #333;
         line-height: 1.5;
         text-align: center;
         letter-spacing: .04em;
-        @include fz(35);
         font-weight: bold;
-        @include mq(sp) {
-          text-align: center;
-          font-size: 7.6vw !important
-        }
+        margin: 0;
+        @include fz(40);
       }
-    ul {
-      li {
-        display: inline-block;
-        margin-right: 3%;
+      p {
+        @include fz(16);
+        color: #333;
+        font-weight: bold;
+        text-align: center;
         @include mq(sp) {
-          margin-right: 10%;
-        }
-        &:last-child {
-          margin-right: 0;
-        }
-        img {
-          width: 100%;
-        }
-        a {
-          color: #40b6d0;
-          font-weight: bold;
-          @include fz(16);
-          position: relative;
-          padding-bottom: .2em;
-          &:after {
-            display: inline-block;
-            width: .42em;
-            height: .42em;
-            content: '';
-            position: absolute;
-            top: 20%;
-            right: -12px;
-            transform: rotate(45deg);
-            vertical-align: baseline;
-            border-top: 1px solid #40b6d0;
-            border-right: 1px solid #40b6d0;
-            @include mq(sp) {
-              top: 20%;
-              right: -13px;
-            }
-          }
-          &:hover {
-            color: $blue;
-            opacity: 1;
-            &:after {
-              border-top: 2px solid $blue;
-              border-right: 2px solid $blue;
-            }
-          }
+          line-height: 1.5;
+          margin-top: 5%;
         }
       }
     }
-    .view_btn {
+    .hero_link {
+      position: absolute;
+      top: 68%;
+      left: 48%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 5;
+      white-space: nowrap;
       @include mq(sp) {
-        width: 90%;
-        margin-bottom: 5%;
+        top: 50%;
+      }
+      ul {
+        margin-top: 10%;
+        li {
+          display: inline-block;
+          margin-right: 16%;
+          @include fz(16);        
+          a {
+            color: #40b6d0;
+            font-weight: bold;
+            position: relative;
+            padding-bottom: .2em;
+            &:after {
+              display: inline-block;
+              width: .42em;
+              height: .42em;
+              content: '';
+              position: absolute;
+              top: 20%;
+              right: -12px;
+              transform: rotate(45deg);
+              vertical-align: baseline;
+              border-top: 1px solid #40b6d0;
+              border-right: 1px solid #40b6d0;
+            }
+          }
+        }
       }
     }
-  }
-
+    .scroll {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      cursor: pointer;
+      @include mq(sp) {
+        bottom: 18%;
+      }
+        a {
+          display: inline-block;
+          font-family: $en;
+          transform: translate(0, -50%);
+          text-decoration: none;
+          color: #000;
+          letter-spacing: 2px;
+          padding-top: 70px;
+          span {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 24px;
+          height: 24px;
+          margin-left: -12px;
+          border-left: 2px solid #000;
+          border-bottom: 2px solid #000;
+          transform: rotate(-45deg);
+          animation: sdb 1.5s infinite;
+          box-sizing: border-box;
+          }
+        }
+        @-webkit-keyframes sdb {
+          0% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+          }
+        }
+        @keyframes sdb {
+          0% {
+            transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+          }
+        }
+      }
+    canvas {
+      position: absolute;
+      &#canvas {
+        z-index: 3;
+      }
+      &#canvasbg {
+        z-index: 1;
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        filter: blur(3px);
+        opacity: 0.6;
+      }
+    }
   }
   //end hero
 	#lead {
@@ -159,7 +222,8 @@
       margin: 0px auto;
       padding: 4em 0 2em;
       @include mq(sp) {
-        margin: 10% 0;
+        margin: -20% 0 10%;
+        padding: 0 0 2em;
         background-size: contain;
       }
       .lead_inr {
@@ -489,14 +553,8 @@
 	}
 	#contents {
       padding: 60px 0;
-      background: url(../images/price_bg_pc.jpg) no-repeat;
+      background: #f7ffff;
       background-size: cover;
-      @include mq(sp) {
-        background-position: -410px 0;
-      }
-      @include mq(pc) {
-        background-attachment: fixed;
-      }
       &:before {
         content: '';
         display: block;
@@ -504,68 +562,71 @@
         top: 0;
         left: 0;
       }
-		.contents_inr {
-			@include grobal_inr;
-			text-align: center;
-          h2 {
+      .contents_inr {
+        @include grobal_inr;
+        text-align: center;
+        h2 {
+          color: $c-grey;
+          text-align: left;
+          @include fz(26);
+          line-height: 1.4;
+          @include mq(sp) {
+            width: 90%;
+          }
+          @include mq(pc) {
+            float: left;
+            margin-bottom: 4rem;
+          }
+          span {
             color: $c-grey;
-            text-align: left;
-            @include fz(26);
-            line-height: 1.4;
-            @include mq(pc) {
-              float: left;
-              margin-bottom: 4rem;
+            &.en {
+              color: #40b6d0;
             }
-            span {
-              color: $c-grey;
-              &.en {
-                color: #40b6d0;
+          }
+        }
+        h3 span {
+          border: 2px solid #fff;
+        }
+        ul {
+          @include mq(sp) {
+            margin: 0 auto;
+            width: 90%;
+          }
+          li {
+            vertical-align: top;
+            margin-bottom: 20px;
+            figure {
+              width: 25%;
+              margin-right: 5%;
+              background: $gradation;
+              color: #fff;
+              @include fz(18);
+              text-align: center;
+              font-weight: bold;
+              padding: 4%;
+              display: inline-block;
+              vertical-align: middle;
+            }
+            div {
+              width: 70%;
+              display: inline-block;
+              vertical-align: middle;
+              h4 {
+                @include fz(20);
+                color: $c-grey;
+                font-weight: bold;
+                margin-bottom: 1.5%;
+                padding-bottom: 1.5%;
+                border-bottom: 2px solid $c-grey;
+              }
+              p {
+                color: $c-grey;
+                line-height: 1.4;
               }
             }
           }
-          h3 span {
-            border: 2px solid #fff;
-          }
-			ul {
-				@include mq(sp) {
-                  margin: 0 auto;
-                  width: 90%;
-				}
-				li {
-					vertical-align: top;
-					margin-bottom: 20px;
-					figure {
-                      width: 25%;
-                      margin-right: 5%;
-                      background: $gradation;
-                      color: #fff;
-                      @include fz(18);
-                      text-align: center;
-                      font-weight: bold;
-                      padding: 4%;
-                      display: inline-block;
-                      vertical-align: middle;
-					}
-					div {
-						width: 70%;
-						display: inline-block;
-						vertical-align: middle;
-						h4 {
-                          @include fz(20);
-                          color: $c-grey;
-                          font-weight: bold;
-                          margin-bottom: 1.5%;
-                          padding-bottom: 1.5%;
-                          border-bottom: 2px solid $c-grey;
-						}
-						p {
-                          color: $c-grey;
-                          line-height: 1.4;
-						}
-					}
-				}
-			}
-		}
+        }
+      }
 	}
 	#price {
       margin: 60px 0;
@@ -601,8 +662,15 @@
               font-weight: bold;
               padding: 3% 0 1%;
               h3 {
-                @include fzvw(22);
-                color: #fff;
+                @include fzvw(20);
+                display: inline-block;
+                background: #fff;
+                padding: 4px 6px 2px;
+                border-radius: 30px;
+                margin-bottom: 1%;
+                @include mq(tb) {
+                  font-size: 1.5vw;
+                }
               }
               p {
                 color: #fff;
@@ -617,15 +685,27 @@
               }
               &:nth-child(1) {
                 background: $gradation;
+                h3 {
+                  color: #3cb3d0;
+                }
               }
               &:nth-child(2) {
                 background: linear-gradient(to right, #6467cd, #3c93d0);
+                h3 {
+                  color: #3c93d0;
+                }
               }
               &:nth-child(3) {
                 background: linear-gradient(to right, #d3925a, #bfd03c);
+                h3 {
+                  color: #bfd03c;
+                }
               }
               &:nth-child(4) {
                 background: linear-gradient(to right, #000000, #5c5c5c);
+                h3 {
+                  color: #5c5c5c;
+                }
               }
             }
           }
