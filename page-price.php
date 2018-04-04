@@ -79,10 +79,10 @@ Template Name: price
       <ul>
         <li><a href="<?php echo home_url(); ?>/">TOP</a></li>
         <li>&gt;</li>
-        <li>価格について</li>
+        <li>プランについて</li>
       </ul>
     </div>
-    <h1>PRICE</h1>
+    <h1>PLAN</h1>
   </section>
   <div id="price_detail">
     <div class="price_inner">

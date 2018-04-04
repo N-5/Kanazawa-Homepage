@@ -11,7 +11,7 @@
         <li><?php the_title(); ?></li>
       </ul>
     </div>
-    <h1>NEWS<span>ニュース</span></h1>
+    <h1>NEWS<span>ニュース記事</span></h1>
   </section>
   
   <div id="news_single">
