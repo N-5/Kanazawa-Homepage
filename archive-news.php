@@ -9,7 +9,7 @@
         <li><a href="<?php echo home_url(); ?>/news">NEWS一覧</a></li>
       </ul>
     </div>
-    <h1>NEWS<span>ニュース一覧</span></h1>
+    <h1>NEWS</h1>
   </section>
   <section id="news_archive">
     <div class="news_archive_inr">

@@ -37,7 +37,7 @@
   width: 330px;
   @include mq(sptb) {
     width: 100%;
-    margin: 10% auto;
+    margin: 10% auto 0;
   }
   h3 {
     @include fz(14);
@@ -139,19 +139,24 @@
       display: inline-block;
       overflow: hidden;
       margin-top: 5rem;
-        @include mq(sptb) {
-            width: 100%;
-            margin: 0 auto;
-        }
-      ul.col3 li {
-        @include mq(sp) {
-          width: 48%;
-          margin-right: 2%;
-        }
+      @include mq(sptb) {
+          width: 100%;
+          margin: 5% auto 0;
       }
-      ul.col3 li:nth-child(2n) {
-        @include mq(sp) {
-          margin-right: 0;
+      ul.col3{
+        li {
+          @include mq(tb) {
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+          }
+          @include mq(sp) {
+            width: 49%;
+            margin: 0 2% 5% 0;
+            &:nth-child(2n) {
+              margin-right: 0;
+            }
+          }
         }
       }
     }
@@ -265,7 +270,6 @@
             padding: 5%;
             > h2 {
               @include fz(25);
-              margin-bottom: 15px;
               line-height: 1.3em;
               padding-bottom: 10px;
               font-weight: bold;
@@ -299,16 +303,17 @@
               }
             }
             h2,h3,h4 {
-                color: $color;
-                border-bottom: 0;
-                font-weight: bold;
-                padding: 0 0 0 2%;
-                margin: 5% 0 2%;
-                margin-bottom: 1%;
-                position: relative;
-                @include mq(sp) {
-                    margin-top: 5%;
-                }
+              color: $color;
+              border-bottom: 0;
+              font-weight: bold;
+              line-height: 1.6;
+              padding: 0 0 0 2%;
+              margin: 5% 0 2%;
+              margin-bottom: 1.5%;
+              position: relative;
+              @include mq(sp) {
+                  margin-top: 5%;
+              }
             }
             h2 {
               @include fz(20);
@@ -319,13 +324,14 @@
             h3 {
               @include fz(18);
               border-left: 3px solid $color;
+              margin-bottom: 1rem;
             }
             h4,h5,h6,h7 {
               @include fz(14);
               border-left: 3px solid $color;
             }
             p {
-              margin-bottom: 1%;
+              margin-bottom: 1.5rem;
               @include mq(sp) {
                 font-size: 14px;
               }

@@ -23,13 +23,6 @@ $(function() {
 	});
 });
 
-$(function(){
-$(".global_nav li").hover(function(){
-    $(this).children('ul').stop().slideDown();
-  }, function(){
-    $(this).children('ul').stop().slideUp();
-  });
-});
 
 $(function() {
 	$('.single_slider').slick({
@@ -89,11 +82,13 @@ $(function(){
     if($(this).hasClass('open')){
       $(this).removeClass('open');
       $('.global_nav').removeClass('open');
+      $('.content').removeClass('active');
       $(window).off('.noScroll');
     }
     else{
       $(this).addClass('open');
       $('.global_nav').addClass('open');
+      $('.content').addClass('active');
       $(window).on('touchmove.noScroll', function(e) {
           e.preventDefault();
       });
@@ -141,8 +136,10 @@ $(function(){
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
         sp_nav.addClass('active');
+        ('#menu_btn').addClass('active');
       } else {
         sp_nav.removeClass('active');
+        ('#menu_btn').removeClass('active');
       }
     });
 });
@@ -159,6 +156,11 @@ $(function(){
       var position = target.offset().top; //ヘッダの高さ分位置をずらす
       $("html, body").animate({scrollTop:position}, 550, "swing");
       return false;
+    });
+    $(".global_nav li").hover(function(){
+      $(this).children('ul').stop().slideDown();
+    }, function(){
+      $(this).children('ul').stop().slideUp();
     });
   } else {
     //それ以外の場合
