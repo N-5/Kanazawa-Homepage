@@ -243,7 +243,7 @@
     <div class="seo_inr">
       <h2>
         <span class="en">SPPORT</span>
-        どこよりも徹底的に。<br>あなたのホームページを<br class="sp">サポートします。
+        どこよりも徹底的に。<br>あなたのホームページを<br class="sp">サポートします
       </h2>
       <div class="lead">
         <i><img src="<?php echo get_template_directory_uri(); ?>/images/seo_icon.png" alt=""></i>
