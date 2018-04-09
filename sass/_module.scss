@@ -69,7 +69,7 @@ section.animation .m_animation_1 {
     background-image: -moz-linear-gradient(top,#5e8ee4,#4173c9);
     background-image: -webkit-linear-gradient(top,#5e8ee4,#4173c9);
     background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#5e8ee4),color-stop(1,#4173c9));
-    @include fz(14); 
+    @include fz(14);
     color: #fff;
     padding: 12px 0;
     cursor: pointer;
