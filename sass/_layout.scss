@@ -91,7 +91,7 @@
       padding: 10% 0;
     }
     > h3 {
-      @include fz(30);
+      @include fz(30);	
       line-height: 1;
       margin-bottom: 30px;
       @include mq(sp) {

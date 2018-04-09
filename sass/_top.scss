@@ -64,7 +64,7 @@
   .view_btn {
     width: 100%;
   }
-
+  
   #hero {
     position: relative;
     height: 80vh;
@@ -119,7 +119,7 @@
         li {
           display: inline-block;
           margin-right: 16%;
-          @include fz(16);
+          @include fz(16);        
           a {
             color: #40b6d0;
             font-weight: bold;
@@ -766,7 +766,7 @@
             td {
               &:nth-child(1) {
                 border-left: none;
-              }
+              } 
               &:nth-child(2) {
                 background: #828995;
                 color: #fff;
@@ -816,7 +816,7 @@
 				margin-bottom: 50px;
 				li:nth-child(n+5) {
 					display: none;
-
+					
 				}
 			}
 			.view_btn {
@@ -975,7 +975,7 @@
             }
             p {
               @include fz(13);
-              line-height: 1.4;
+              line-height: 1.4;				
             }
             &:last-child {
               figure {
