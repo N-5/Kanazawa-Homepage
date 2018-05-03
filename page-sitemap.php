@@ -45,9 +45,16 @@
                 <?php endwhile; ?>
               </ul>
             </li>
+          <li><a href="<?php echo home_url(); ?>/home/">全国対応可能ホームページ制作.com</a>  
+            <ul>
+              <li><a href="<?php echo home_url(); ?>/home/toyama/">富山ホームページ制作.com</a></li>
+              <li><a href="<?php echo home_url(); ?>/home/fukui/">福井ホームページ制作.com</a></li>
+            </ul>
+          </li>
           <li><a href="<?php echo home_url(); ?>/price/">プラン</a></li>
+          <li><a href="<?php echo home_url(); ?>/company/">会社概要</a></li>
+          <li><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>
           <li><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
-          <li><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>  
         </ul>
         <ul>
           <h4>関連リンク</h4>
