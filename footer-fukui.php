@@ -94,6 +94,7 @@
         <h4>Others</h4>
         <li><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
         <li><a href="<?php echo home_url(); ?>/news/dw/">資料請求</a></li>
+        <li><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>
       </ul>
       <ul>
         <h4>SNS-BLOG</h4>
@@ -102,17 +103,17 @@
       </ul>
       <ul>
         <h4>LINKS</h4>
-        <li><a href="http://toyama-venture.com/" target="_blank">北陸ベンチャーハック</a></li>
-        <li><a href="http://is-consulting.jp/" target="_blank">I’s Consulting,Inc</a></li>
+        <li><a href="<?php echo home_url(); ?>/home/">全国</a></li>
+        <li><a href="<?php echo home_url(); ?>/home/toyama/">富山</a></li>
+        <li><a href="<?php echo home_url(); ?>/home/fukui/">福井</a></li>
       </ul>
     </div>
   </section>
   <section class="footer_last">
     <div class="footer_last_inr">
       <ul>
-        <li><a href="<?php echo home_url(); ?>#faq">よくあるご質問</a></li>
-        <li><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>
-        <li><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
+        <li><a href="http://toyama-venture.com/" target="_blank">北陸ベンチャーハック</a></li>
+        <li><a href="http://is-consulting.jp/" target="_blank">I’s Consulting,Inc</a></li>
       </ul>
       <p>Copyright ©金沢ホームページ制作.COM All Rights Reserved.</p>
     </div>

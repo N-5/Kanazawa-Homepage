@@ -331,6 +331,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/fukuihomepage_logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/fukuihomepage_logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/gray.gif": {
 		"ft": 4194304,
 		"iS": 35,
@@ -715,6 +725,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/toyamahomepage_logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/toyamahomepage_logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -727,6 +747,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/nav.php",
+		"oF": 0
+		},
+	"\/page-company.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-company.php",
 		"oF": 0
 		},
 	"\/page-fukui.php": {
