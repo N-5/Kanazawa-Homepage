@@ -61,7 +61,8 @@ Template Name: company
                 </dl>
                 <dl><dt>その他</dt>
                     <dd>
-                        <a href="https://www.isico.or.jp/company/dgnet/3520.html" target="_blank">公益社団法人石川県産業創出支援機構（ISICO）専門家</a>
+                        <a href="https://www.isico.or.jp/company/dgnet/3520.html" target="_blank">公益社団法人石川県産業創出支援機構（ISICO）専門家</a><br>
+                        <a href="https://www.it-hojo.jp/" target="_blank">IT導入補助金 IT導入支援事業者</a>
                     </dd>
                 </dl>
           </div>
