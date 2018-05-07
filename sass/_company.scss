@@ -1,0 +1,74 @@
+// ******************************
+//comany.scss
+// ******************************
+#company{
+  h2 {
+    @include fz(20);
+    font-family: $f-yugo;
+    margin: 40px 0;
+    border-bottom: 2px solid $c-grey;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: bold;
+    @include mq(sp) {
+      margin: 10% 0 5%;
+    }
+  }
+  .inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    @include mq(sptb) {
+      width: 90%;
+    };
+    .content_1 {
+      p {
+        @include fz(14);
+        margin-bottom: 60px;
+        @include mq(sp) {
+          margin-bottom: 10%;
+        }
+        br {
+          @include mq(sp) {
+            display: none;
+          }
+        }
+      }
+      .company_table_1 {
+        text-align: left;
+        max-width: 750px;
+        margin: 0 auto 100px;
+        dl {
+          border-bottom: 1px solid #ccc;
+          padding: 20px 0;
+          display: flex;
+          justify-content: space-between;
+          @include mq(sp) {
+            flex-flow: row wrap;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+          dt, dd {
+            vertical-align: top;
+            @include fz(13);
+            line-height: 1.5;
+          }
+          dt {
+            margin-right: 5%;
+            width: 15%;
+            font-weight: bold;
+            @include mq(sp) {
+              margin-bottom: 2%;
+            }
+          }
+          dd {
+            width: 85%;
+            @include mq(sp) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

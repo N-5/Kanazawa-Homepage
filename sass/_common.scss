@@ -299,6 +299,7 @@ header {
   position: relative;
   top: 0;
   z-index: 999;
+  overflow: hidden;
   .nav_bg {
     display: none;
     left: -100%;
