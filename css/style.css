@@ -455,6 +455,12 @@ header {
       overflow: hidden;
       width: 300px;
       height: 17px; }
+    header .header_inr h1 a.toyama {
+      background: url(../images/toyamahomepage_logo.svg) no-repeat;
+      background-size: contain; }
+    header .header_inr h1 a.fukui {
+      background: url(../images/fukuihomepage_logo.svg) no-repeat;
+      background-size: contain; }
     @media screen and (max-width: 425px) {
       header .header_inr h1 {
         padding: 5% 0; }
@@ -528,7 +534,8 @@ header {
   width: 100%;
   position: relative;
   top: 0;
-  z-index: 999; }
+  z-index: 999;
+  overflow: hidden; }
   .global_nav .nav_bg {
     display: none;
     left: -100%;
@@ -3806,3 +3813,439 @@ section.animation .m_animation_1:after {
             content: '作業工数'; }
           #price_detail .price_inner #table td:nth-of-type(4):before {
             content: '御見積単価'; } }
+
+#company h2 {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  margin: 40px 0;
+  border-bottom: 2px solid #242424;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: bold; }
+  @media screen and (max-width: 425px) {
+    #company h2 {
+      font-size: 4.375vw; } }
+  @media screen and (min-width: 426px) and (max-width: 999px) {
+    #company h2 {
+      font-size: 20px; } }
+  @media screen and (min-width: 1000px) {
+    #company h2 {
+      font-size: 20px; } }
+  @media screen and (max-width: 425px) {
+    #company h2 {
+      margin: 10% 0 5%; } }
+
+#company .inner {
+  max-width: 1000px;
+  margin: 0 auto; }
+  @media screen and (max-width: 999px) {
+    #company .inner {
+      width: 90%; } }
+  #company .inner .content_1 p {
+    margin-bottom: 60px; }
+    @media screen and (max-width: 425px) {
+      #company .inner .content_1 p {
+        font-size: 3.0625vw; } }
+    @media screen and (min-width: 426px) and (max-width: 999px) {
+      #company .inner .content_1 p {
+        font-size: 14px; } }
+    @media screen and (min-width: 1000px) {
+      #company .inner .content_1 p {
+        font-size: 14px; } }
+    @media screen and (max-width: 425px) {
+      #company .inner .content_1 p {
+        margin-bottom: 10%; } }
+    @media screen and (max-width: 425px) {
+      #company .inner .content_1 p br {
+        display: none; } }
+  #company .inner .content_1 .company_table_1 {
+    text-align: left;
+    max-width: 750px;
+    margin: 0 auto 100px; }
+    #company .inner .content_1 .company_table_1 dl {
+      border-bottom: 1px solid #ccc;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between; }
+      @media screen and (max-width: 425px) {
+        #company .inner .content_1 .company_table_1 dl {
+          flex-flow: row wrap; } }
+      #company .inner .content_1 .company_table_1 dl:last-child {
+        border-bottom: none; }
+      #company .inner .content_1 .company_table_1 dl dt, #company .inner .content_1 .company_table_1 dl dd {
+        vertical-align: top;
+        line-height: 1.5; }
+        @media screen and (max-width: 425px) {
+          #company .inner .content_1 .company_table_1 dl dt, #company .inner .content_1 .company_table_1 dl dd {
+            font-size: 2.84375vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #company .inner .content_1 .company_table_1 dl dt, #company .inner .content_1 .company_table_1 dl dd {
+            font-size: 13px; } }
+        @media screen and (min-width: 1000px) {
+          #company .inner .content_1 .company_table_1 dl dt, #company .inner .content_1 .company_table_1 dl dd {
+            font-size: 13px; } }
+      #company .inner .content_1 .company_table_1 dl dt {
+        margin-right: 5%;
+        width: 15%;
+        font-weight: bold; }
+        @media screen and (max-width: 425px) {
+          #company .inner .content_1 .company_table_1 dl dt {
+            margin-bottom: 2%; } }
+      #company .inner .content_1 .company_table_1 dl dd {
+        width: 85%; }
+        @media screen and (max-width: 425px) {
+          #company .inner .content_1 .company_table_1 dl dd {
+            width: 100%; } }
+
+#it {
+  position: relative;
+  clear: both; }
+  #it * {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif; }
+  #it h2.it_h2_1 {
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+    color: #3e3e3e; }
+    @media screen and (max-width: 425px) {
+      #it h2.it_h2_1 {
+        font-size: 6.5625vw; } }
+    @media screen and (min-width: 426px) and (max-width: 999px) {
+      #it h2.it_h2_1 {
+        font-size: 30px; } }
+    @media screen and (min-width: 1000px) {
+      #it h2.it_h2_1 {
+        font-size: 30px; } }
+    @media screen and (max-width: 425px) {
+      #it h2.it_h2_1 {
+        font-size: 5.4vw; } }
+  #it .inner {
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff;
+    position: relative; }
+    #it .inner .s1 {
+      position: relative;
+      background: url(../images/it/s1_bg.jpg) no-repeat;
+      background-size: cover;
+      padding-bottom: 100px; }
+      #it .inner .s1 .s1_ttl_1,
+      #it .inner .s1 .s1_ttl_2 {
+        position: relative;
+        background: linear-gradient(to right, #64c8cd, #3cb3d0);
+        color: #fff;
+        font-weight: bold;
+        padding: 20px;
+        width: 100%;
+        line-height: 1.5; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_ttl_1,
+          #it .inner .s1 .s1_ttl_2 {
+            font-size: 3.9375vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #it .inner .s1 .s1_ttl_1,
+          #it .inner .s1 .s1_ttl_2 {
+            font-size: 18px; } }
+        @media screen and (min-width: 1000px) {
+          #it .inner .s1 .s1_ttl_1,
+          #it .inner .s1 .s1_ttl_2 {
+            font-size: 18px; } }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_ttl_1,
+          #it .inner .s1 .s1_ttl_2 {
+            width: 90%;
+            background: #2d3033;
+            margin: 0 auto;
+            font-size: 3.5vw; } }
+      #it .inner .s1 .s1_ttl_1 {
+        top: 30px;
+        left: -40%;
+        text-align: right; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_ttl_1 {
+            left: -5%; }
+            #it .inner .s1 .s1_ttl_1 br {
+              display: none; } }
+      #it .inner .s1 .s1_ttl_2 {
+        top: 50px;
+        right: -40%; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_ttl_2 {
+            right: -5%; } }
+      #it .inner .s1 .it_h2_1 {
+        margin-top: 100px; }
+      #it .inner .s1 .s1_ul {
+        max-width: 800px;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_ul {
+            flex-flow: row wrap; } }
+        #it .inner .s1 .s1_ul li {
+          width: 30%; }
+          @media screen and (max-width: 425px) {
+            #it .inner .s1 .s1_ul li {
+              width: 40%;
+              margin: 0 auto; }
+              #it .inner .s1 .s1_ul li:last-child {
+                margin-top: 5%; } }
+        #it .inner .s1 .s1_ul h4 {
+          font-weight: bold;
+          background: linear-gradient(to right, #64c8cd, #3cb3d0);
+          text-align: center;
+          line-height: 1.4;
+          color: #fff;
+          padding: 10px 0; }
+          @media screen and (max-width: 425px) {
+            #it .inner .s1 .s1_ul h4 {
+              font-size: 3.0625vw; } }
+          @media screen and (min-width: 426px) and (max-width: 999px) {
+            #it .inner .s1 .s1_ul h4 {
+              font-size: 14px; } }
+          @media screen and (min-width: 1000px) {
+            #it .inner .s1 .s1_ul h4 {
+              font-size: 14px; } }
+      #it .inner .s1 .s1_div_1 {
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid #464646;
+        color: #464646;
+        text-align: center;
+        line-height: 1.5;
+        padding: 20px 0; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_div_1 {
+            font-size: 3.0625vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #it .inner .s1 .s1_div_1 {
+            font-size: 14px; } }
+        @media screen and (min-width: 1000px) {
+          #it .inner .s1 .s1_div_1 {
+            font-size: 14px; } }
+        @media screen and (max-width: 425px) {
+          #it .inner .s1 .s1_div_1 {
+            width: 90%; } }
+    #it .inner .s2,
+    #it .inner .s4 {
+      margin: 100px 0;
+      position: relative; }
+      @media screen and (max-width: 425px) {
+        #it .inner .s2,
+        #it .inner .s4 {
+          padding: 0; } }
+      #it .inner .s2 .s2_p_1,
+      #it .inner .s2 .s4_p_1,
+      #it .inner .s4 .s2_p_1,
+      #it .inner .s4 .s4_p_1 {
+        text-align: center;
+        line-height: 3;
+        margin-top: 30px; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s2 .s2_p_1,
+          #it .inner .s2 .s4_p_1,
+          #it .inner .s4 .s2_p_1,
+          #it .inner .s4 .s4_p_1 {
+            font-size: 3.5vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #it .inner .s2 .s2_p_1,
+          #it .inner .s2 .s4_p_1,
+          #it .inner .s4 .s2_p_1,
+          #it .inner .s4 .s4_p_1 {
+            font-size: 16px; } }
+        @media screen and (min-width: 1000px) {
+          #it .inner .s2 .s2_p_1,
+          #it .inner .s2 .s4_p_1,
+          #it .inner .s4 .s2_p_1,
+          #it .inner .s4 .s4_p_1 {
+            font-size: 16px; } }
+    #it .inner .s3 {
+      background: #f0f2f5;
+      padding: 60px 0; }
+      #it .inner .s3 .it_h2_1 {
+        margin-bottom: 30px; }
+      #it .inner .s3 .s3_p_1 {
+        text-align: center;
+        margin: 30px 0 10px; }
+      #it .inner .s3 .s3_btn {
+        text-align: center;
+        width: 250px;
+        margin: 0 auto; }
+        #it .inner .s3 .s3_btn a {
+          display: block;
+          padding: 20px 0;
+          background: linear-gradient(to right, #64c8cd, #3cb3d0);
+          font-weight: bold;
+          color: #fff; }
+          @media screen and (max-width: 425px) {
+            #it .inner .s3 .s3_btn a {
+              font-size: 3.5vw; } }
+          @media screen and (min-width: 426px) and (max-width: 999px) {
+            #it .inner .s3 .s3_btn a {
+              font-size: 16px; } }
+          @media screen and (min-width: 1000px) {
+            #it .inner .s3 .s3_btn a {
+              font-size: 16px; } }
+      #it .inner .s3 table {
+        max-width: 800px;
+        margin: 0 auto; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s3 table {
+            width: 96%; } }
+        #it .inner .s3 table tr {
+          border-bottom: 20px solid #f0f2f5; }
+          #it .inner .s3 table tr th, #it .inner .s3 table tr td {
+            line-height: 1.6; }
+            @media screen and (max-width: 425px) {
+              #it .inner .s3 table tr th, #it .inner .s3 table tr td {
+                font-size: 3.5vw; } }
+            @media screen and (min-width: 426px) and (max-width: 999px) {
+              #it .inner .s3 table tr th, #it .inner .s3 table tr td {
+                font-size: 16px; } }
+            @media screen and (min-width: 1000px) {
+              #it .inner .s3 table tr th, #it .inner .s3 table tr td {
+                font-size: 16px; } }
+            #it .inner .s3 table tr th span, #it .inner .s3 table tr td span {
+              display: block; }
+              @media screen and (max-width: 425px) {
+                #it .inner .s3 table tr th span, #it .inner .s3 table tr td span {
+                  font-size: 2.625vw; } }
+              @media screen and (min-width: 426px) and (max-width: 999px) {
+                #it .inner .s3 table tr th span, #it .inner .s3 table tr td span {
+                  font-size: 12px; } }
+              @media screen and (min-width: 1000px) {
+                #it .inner .s3 table tr th span, #it .inner .s3 table tr td span {
+                  font-size: 12px; } }
+          #it .inner .s3 table tr th {
+            width: 150px;
+            background: #fff;
+            text-align: center;
+            padding: 20px 0; }
+          #it .inner .s3 table tr td {
+            padding-left: 30px; }
+    #it .inner .s5 {
+      background: url(../images/it/s5_bg.jpg) no-repeat;
+      background-size: cover;
+      padding: 50px 0 100px; }
+      @media screen and (max-width: 425px) {
+        #it .inner .s5 {
+          background-position: 100% 0;
+          padding: 0; } }
+      #it .inner .s5 .s5_ul_1 {
+        max-width: 800px;
+        margin: 30px auto 50px; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s5 .s5_ul_1 {
+            width: 90%; } }
+        #it .inner .s5 .s5_ul_1 li {
+          margin-bottom: 30px; }
+          #it .inner .s5 .s5_ul_1 li h4 {
+            background: linear-gradient(to right, #64c8cd, #3cb3d0);
+            display: inline-block;
+            color: #fff;
+            padding: 10px 20px;
+            font-weight: bold; }
+            @media screen and (max-width: 425px) {
+              #it .inner .s5 .s5_ul_1 li h4 {
+                font-size: 4.375vw; } }
+            @media screen and (min-width: 426px) and (max-width: 999px) {
+              #it .inner .s5 .s5_ul_1 li h4 {
+                font-size: 20px; } }
+            @media screen and (min-width: 1000px) {
+              #it .inner .s5 .s5_ul_1 li h4 {
+                font-size: 20px; } }
+          #it .inner .s5 .s5_ul_1 li p {
+            margin-top: 10px; }
+            @media screen and (max-width: 425px) {
+              #it .inner .s5 .s5_ul_1 li p {
+                font-size: 3.5vw; } }
+            @media screen and (min-width: 426px) and (max-width: 999px) {
+              #it .inner .s5 .s5_ul_1 li p {
+                font-size: 16px; } }
+            @media screen and (min-width: 1000px) {
+              #it .inner .s5 .s5_ul_1 li p {
+                font-size: 16px; } }
+    #it .inner .s6 {
+      background: linear-gradient(to right, #64c8cd, #3cb3d0);
+      padding: 60px 0; }
+      #it .inner .s6 .it_h2_1 {
+        color: #fff;
+        margin-bottom: 40px; }
+      #it .inner .s6 .s6_ul_1 {
+        max-width: 800px;
+        margin: 0 auto; }
+        @media screen and (max-width: 425px) {
+          #it .inner .s6 .s6_ul_1 {
+            width: 90%; } }
+        #it .inner .s6 .s6_ul_1 li {
+          background: #fff;
+          color: #2597b3;
+          font-weight: bold;
+          line-height: 1.6;
+          margin-bottom: 15px;
+          padding: 14px 50px;
+          text-align: center; }
+          @media screen and (max-width: 425px) {
+            #it .inner .s6 .s6_ul_1 li {
+              font-size: 3.5vw; } }
+          @media screen and (min-width: 426px) and (max-width: 999px) {
+            #it .inner .s6 .s6_ul_1 li {
+              font-size: 16px; } }
+          @media screen and (min-width: 1000px) {
+            #it .inner .s6 .s6_ul_1 li {
+              font-size: 16px; } }
+    #it .inner .sl {
+      max-width: 800px;
+      margin: 100px auto 100px;
+      text-align: center; }
+      @media screen and (max-width: 425px) {
+        #it .inner .sl {
+          width: 90%; } }
+      #it .inner .sl .sl_h2_1 {
+        font-weight: bold;
+        line-height: 1.6;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 425px) {
+          #it .inner .sl .sl_h2_1 {
+            font-size: 5.25vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #it .inner .sl .sl_h2_1 {
+            font-size: 24px; } }
+        @media screen and (min-width: 1000px) {
+          #it .inner .sl .sl_h2_1 {
+            font-size: 24px; } }
+      #it .inner .sl .sl_p_1 {
+        text-align: center; }
+        @media screen and (max-width: 425px) {
+          #it .inner .sl .sl_p_1 {
+            font-size: 3.5vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #it .inner .sl .sl_p_1 {
+            font-size: 16px; } }
+        @media screen and (min-width: 1000px) {
+          #it .inner .sl .sl_p_1 {
+            font-size: 16px; } }
+        #it .inner .sl .sl_p_1 span {
+          display: block;
+          margin-top: 30px; }
+      #it .inner .sl .sl_btn a {
+        width: 400px;
+        margin: 0 auto;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+        display: block;
+        background: linear-gradient(to right, #64c8cd, #3cb3d0); }
+        @media screen and (max-width: 425px) {
+          #it .inner .sl .sl_btn a {
+            font-size: 3.5vw; } }
+        @media screen and (min-width: 426px) and (max-width: 999px) {
+          #it .inner .sl .sl_btn a {
+            font-size: 16px; } }
+        @media screen and (min-width: 1000px) {
+          #it .inner .sl .sl_btn a {
+            font-size: 16px; } }
+        @media screen and (max-width: 425px) {
+          #it .inner .sl .sl_btn a {
+            width: 100%; } }

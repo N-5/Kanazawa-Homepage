@@ -7,6 +7,21 @@ $place = "石川";
 $city = "金沢";
 
 
+//グローバル変数定義　home
+
+$city_home = "全国対応可能";
+
+//グローバル変数定義　toyama
+
+$place_toyama = "富山";
+$city_toyama = "富山";
+
+//グローバル変数定義　fukui
+
+$place_fukui = "福井";
+$city_fukui = "福井";
+
+
 //load css
 function register_stylesheet() {
   wp_register_style('style', get_template_directory_uri().'/css/style.css');
