@@ -2,6 +2,24 @@
 //it-hojokin.scss
 // ******************************
 
+.it_hojo {
+  width: 200px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 1;
+  @include mq(sp) {
+    display: none;
+  }
+}
+.page-id-183,
+.page-id-346 {
+  .it_hojo,
+  #sp_nav{
+    display: none;
+  }
+}
+
 $c-it: #e92c2c;
 $g-it: linear-gradient(to right,#64c8cd,#3cb3d0);
 #it {

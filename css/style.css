@@ -3896,6 +3896,22 @@ section.animation .m_animation_1:after {
           #company .inner .content_1 .company_table_1 dl dd {
             width: 100%; } }
 
+.it_hojo {
+  width: 200px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 1; }
+  @media screen and (max-width: 425px) {
+    .it_hojo {
+      display: none; } }
+
+.page-id-183 .it_hojo,
+.page-id-183 #sp_nav,
+.page-id-346 .it_hojo,
+.page-id-346 #sp_nav {
+  display: none; }
+
 #it {
   position: relative;
   clear: both; }

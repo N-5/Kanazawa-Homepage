@@ -99,6 +99,7 @@
     <div class="footer_link">
       <ul>
         <h4>Others</h4>
+        <li><a href="<?php echo home_url(); ?>/it-hojyokin/">IT導入補助金×オウンドメディア</a></li>
         <li><a href="<?php echo home_url(); ?>/sitemap/">サイトマップ</a></li>
         <li><a href="<?php echo home_url(); ?>/news/dw/">資料請求</a></li>
         <li><a href="<?php echo home_url(); ?>/privacy/">プライバシーポリシー</a></li>

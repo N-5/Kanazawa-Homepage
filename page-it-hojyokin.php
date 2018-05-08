@@ -42,11 +42,11 @@ Template Name: it-hojokin
           </tr>
           <tr>
             <th>補助金額</th>
-            <td>購入金額（税抜）の1/2（上限50万円・下限15万円）<span>※消費税は補助金対象外となります。</span></td>
+            <td>購入金額（税抜）の1/2<br class="sp">（上限50万円・下限15万円）<span>※消費税は補助金対象外となります。</span></td>
           </tr>
           <tr>
             <th>一次公募期間</th>
-            <td>2018年4月20日（金）～ 6月4日（月）<span>※弊社での交付申請受付締め切りは5月23日(水)となります。</span></td>
+            <td>2018年4月20日（金）～<br class="sp"> 6月4日（月）<span>※弊社での交付申請受付締め切りは5月23日(水)となります。</span></td>
           </tr>
           <tr>
             <th>対象ツール</th>
@@ -54,7 +54,7 @@ Template Name: it-hojokin
           </tr>
         </table>
         <p class="s3_p_1">※IT導入補助金の詳細は公募要項をご確認ください</p>
-        <div class="s3_btn"><a href="https://www.it-hojo.jp/h29/doc/pdf/h29_application_guidelines.pdf">公募要項</a></div>
+        <div class="s3_btn"><a href="https://www.it-hojo.jp/h29/doc/pdf/h29_application_guidelines.pdf" target="_blank">公募要項</a></div>
       </section>
       <section class="s4">
         <h2 class="it_h2_1">オウンドメディアとは？</h2>
@@ -72,8 +72,8 @@ Template Name: it-hojokin
         <h2 class="it_h2_1">オウンドメディア以外にも<br>金沢ホームページ制作.COMの<br class="sp">IT導入補助金は<br>こんな方におすすめです！</h2>
         <ul class="s6_ul_1">
           <li>オウンドメディアを作ってコンテンツマーケティングをやってみたい方</li>
-          <li>Webサイトが無かったのでこの機会に作りたい方</li>
-          <li>新しくサービス紹介用のWebサイトを作りたい方</li>
+          <li>Webサイトが無かったので<br class="sp">この機会に作りたい方</li>
+          <li>新しくサービス紹介用の<br class="sp">Webサイトを作りたい方</li>
           <li>SEOをやりたいがこれまで予算が合わずできなかった方</li>
         </ul>
       </section>

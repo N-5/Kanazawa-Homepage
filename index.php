@@ -9,8 +9,8 @@
     </div>
     <div class="hero_link">
       <ul>
-        <li><a href="<?php echo home_url(); ?>/price/">プランを見る</a></li>
-        <li><a href="#contact">相談してみる</a></li>
+        <li><a href="<?php echo home_url(); ?>/price">プランを見る</a></li>
+        <li><a href="<?php echo home_url(); ?>/contact">相談してみる</a></li>
       </ul>
     </div>
     <div class="scroll"><a href="#lead"><span></span>Scroll</a></div>
