@@ -54,7 +54,7 @@ Template Name: it-hojokin
           </tr>
         </table>
         <p class="s3_p_1">※IT導入補助金の詳細は公募要項をご確認ください</p>
-        <div class="s3_btn"><a href="https://www.it-hojo.jp/h29/doc/pdf/h29_application_guidelines.pdf">公募要項</a></div>
+        <div class="s3_btn"><a href="https://www.it-hojo.jp/h29/doc/pdf/h29_application_guidelines.pdf" target="_blank">公募要項</a></div>
       </section>
       <section class="s4">
         <h2 class="it_h2_1">オウンドメディアとは？</h2>

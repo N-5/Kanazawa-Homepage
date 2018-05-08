@@ -67,7 +67,7 @@
   <div id="main" class="contents">
     <div id="sp_nav">
       <ul>
-        <li><a href="https://kanazawa-website.com/#contact"><img src="<?php echo get_template_directory_uri(); ?>/images/sp_nav_contact_01.png" alt="お問い合わせ"></a></li>
+        <li><a href="https://kanazawa-website.com/it-hojyokin/"><img src="<?php echo get_template_directory_uri(); ?>/images/it/sp_nav_contact_02.jpg" alt="IT導入補助金×オウンドメディア"></a></li>
       </ul>
       <div class="overlay"></div>
     </div>
@@ -93,3 +93,4 @@
         </div>
       </div>
     </header>
+    <div class="it_hojo"><a href="<?php echo home_url(); ?>/it-hojyokin/"><img src="<?php echo get_template_directory_uri(); ?>/images/it/it_hojokin_pc.jpg" alt="IT導入補助金×オウンドメディア"></a></div>
