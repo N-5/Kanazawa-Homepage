@@ -17,16 +17,16 @@
     <meta name="format-detection" content="telephone=no">
     <!-- /meta -->
 
-    <!-- icon -->
+    <!-- favicon -->
     <link rel="icon" type="image/png" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
     <link rel="icon" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/images/icon.png">
-    <!-- /icon -->
+    <!-- /favicon -->
     
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-    <!-- /icon -->
+    <!-- /font -->
     
     <?php if(is_home() && is_front_page()) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/document-min.css">

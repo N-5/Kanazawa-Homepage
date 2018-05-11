@@ -388,17 +388,17 @@
           <p>まずは、お問合せフォームから「どんなホームページを作りたいか」をお聞かせください。</p>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step2.png" alt="step1"></figure>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step2.png" alt="step2"></figure>
           <h4>ヒアリング</h4>
           <p>実際に面談で打ち合わせなどを行い、ホームページの目的やターゲット顧客・コンテンツなどの必要な情報をお聞かせください。</p>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step3.png" alt="step1"></figure>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step3.png" alt="step3"></figure>
           <h4>ご確認</h4>
           <p>お客様の原稿をもとにホームページをクオリティの高い効果的なデザインを制作します。</p>
         </li>
         <li>
-          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step4.png" alt="step1"></figure>
+          <figure><img src="<?php echo get_template_directory_uri(); ?>/images/step4.png" alt="step4"></figure>
           <h4>納品</h4>
           <p>納品はゴールではなくスタートですので、ホームページを更新・追加して育てていきましょう。</p>
         </li>
