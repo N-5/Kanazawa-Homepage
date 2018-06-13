@@ -14,15 +14,15 @@ Template Name: it-hojokin
         </picture>
       </section>
       <section class="s1">
-        <div class="s1_ttl_1">IT導入補助金でオウンドメディア制作して<br>コンテンツマーケティングに取り組みましょう！</div>
-        <div class="s1_ttl_2">昨年度、１次公募採択率１００％！<br>一次公募こそが補助金を受け取るチャンスです！</div>
+        <div class="s1_ttl_1">IT導入補助金でSEOに強い<br>明日から集客できるWebサイトを制作しましょう！</div>
+        <div class="s1_ttl_2">今年度の補助金予算500億円！<br>導入経費の1/2が対象（最大50万）！</div>
         <h2 class="it_h2_1">金沢ホームページ制作.COMの<br>IT導入補助金を活用したITツール</h2>
         <ul class="s1_ul">
-          <li><i><img src="<?php echo get_template_directory_uri(); ?>/images/it/s1_sns_1.png" alt="オウンドメディア"></i><h4>オウンドメディア制作</h4></li>
-          <li><i><img src="<?php echo get_template_directory_uri(); ?>/images/it/s1_web_2.png" alt="Webサイト"></i><h4>Webサイト新規制作</h4></li>
+          <li><i><img src="<?php echo get_template_directory_uri(); ?>/images/it/s1_sns_1.png" alt="オウンドメディア"></i><h4>Webサイト新規制作</h4></li>
+          <li><i><img src="<?php echo get_template_directory_uri(); ?>/images/it/s1_web_2.png" alt="Webサイト"></i><h4>求人特化サイト制作</h4></li>
           <li><i><img src="<?php echo get_template_directory_uri(); ?>/images/it/s1_analytics_3.png" alt="SEO戦略設計・運用コンサルティング"></i><h4>SEO戦略設計・<br>運用コンサルティング</h4></li>
         </ul>
-        <div class="s1_div_1">IT導入補助金の申請期限６月４日まで！<br>期限間近ではお断りさせていただくことがございますので、<br class="sp">お早めにご相談ください！</div>
+        <div class="s1_div_1">IT導入補助金　2次公募申請開始<br class="sp">　2018年6月20日（水）～2018年8月3日（金）<br>期間間近ではお断りさせていただくことがございますので、<br class="sp">お早めにご相談ください！</div>
       </section>
       <section class="s2">
         <h2 class="it_h2_1">IT導入補助金とは？</h2>
@@ -45,40 +45,40 @@ Template Name: it-hojokin
             <td>購入金額（税抜）の1/2<br class="sp">（上限50万円・下限15万円）<span>※消費税は補助金対象外となります。</span></td>
           </tr>
           <tr>
-            <th>一次公募期間</th>
-            <td>2018年4月20日（金）～<br class="sp"> 6月4日（月）<span>※弊社での交付申請受付締め切りは5月23日(水)となります。</span></td>
+            <th>二次公募期間</th>
+            <td>2018年6月20日（水）～<br class="sp"> 2018年8月3日（金）<span>※弊社での交付申請受付締切は8月1日となります。</span></td>
           </tr>
           <tr>
             <th>対象ツール</th>
-            <td>①オリジナルWebサイト制作<br>②オウンドメディアサイト制作<br>③SEO戦略設計・運用コンサルティング</td>
+            <td>①Webサイト新規制作<br>②リクルートサイト制作<br>③SEO戦略設計・運用コンサルティング</td>
           </tr>
         </table>
         <p class="s3_p_1">※IT導入補助金の詳細は公募要項をご確認ください</p>
         <div class="s3_btn"><a href="https://www.it-hojo.jp/h29/doc/pdf/h29_application_guidelines.pdf" target="_blank">公募要項</a></div>
       </section>
       <section class="s4">
-        <h2 class="it_h2_1">オウンドメディアとは？</h2>
-        <p class="s4_p_1">企業が運営するウェブマガジンや<br class="sp">ブログをオウンドメディアと呼んでいます。<br>日本では、一般的に企業が運営する<br class="sp">ウェブマガジンを指すことが多いです。</p>
+        <h2 class="it_h2_1">SEOに強いWebサイトとは？</h2>
+        <p class="s4_p_1">一般的なWebサイトでは、<br class="sp">検索結果で引っかかりにくく思ったように<br class="sp">アクセス数を増やすことができませんが、<br>SEO（検索エンジン最適化）を行うことで<br class="sp">狙ったユーザーを集客することが可能となります。<br>金沢ホームページ制作.COMでは金沢で<br class="sp">最もSEOに強いWeb制作会社として<br>「明日から集客できるホームページ」を制作致します。</p>
       </section>
       <section class="s5">
-        <h2 class="it_h2_1">オウンドメディアを行うメリット</h2>
+        <h2 class="it_h2_1">WebサイトでSEOを行うメリット</h2>
         <ul class="s5_ul_1">
-          <li><h4>広告施策と違い、サイトが資産となる</h4><p>リスティング広告やSNS広告と違いSEO主体のWeb運営のため消耗せず、資産としてWeb上に残り続けます。</p></li>
-          <li><h4>見込み客の獲得に適している</h4><p>これまでのユーザーだけでなく、潜在顧客の掘り起こしを得意とするため集客のベースアップに最適です。</p></li>
-          <li><h4>価格競争に巻き込まれない</h4><p>信頼と価値のあるコンテンツを継続的に提供することで、新たな差別化の強みを持つことができるのです。</p></li>
+          <li><h4>ブランディング効果</h4><p>SEOで上位表示しているサイトは多くのユーザーが良い印象を持ち、信頼感を感じてもらうことができます。</p></li>
+          <li><h4>中長期的にアクセスを見込める</h4><p>SEOで上位表示をすることで、様々なキーワードも連れて上がることにより、中長期的な流入が見込めます。</p></li>
+          <li><h4>広告と比較しての費用対効果が高い</h4><p>リスティング広告やSNS広告と違って、毎回費用をかけずとも集客ができるので費用対効果が高いです。</p></li>
         </ul>
       </section>
       <section class="s6">
-        <h2 class="it_h2_1">オウンドメディア以外にも<br>金沢ホームページ制作.COMの<br class="sp">IT導入補助金は<br>こんな方におすすめです！</h2>
+        <h2 class="it_h2_1">Webサイト制作以外にも<br>金沢ホームページ制作.COMの<br class="sp">IT導入補助金は<br>こんな方におすすめです！</h2>
         <ul class="s6_ul_1">
-          <li>オウンドメディアを作ってコンテンツマーケティングをやってみたい方</li>
+          <li>求人採用に特化したリクルートサイトを作りたい方</li>
           <li>Webサイトが無かったので<br class="sp">この機会に作りたい方</li>
           <li>新しくサービス紹介用の<br class="sp">Webサイトを作りたい方</li>
           <li>SEOをやりたいがこれまで予算が合わずできなかった方</li>
         </ul>
       </section>
       <section class="sl">
-        <h2 class="sl_h2_1">５月はIT導入補助金に<br class="sp">関する無料相談会を毎日開催！</h2>
+        <h2 class="sl_h2_1">6月はIT導入補助金に関する無料相談会を毎日開催！</h2>
         <p class="sl_p_1">ITビジネスプラザ武蔵にて、IT導入補助金に関するご相談を募集期間中毎日行っております。<br><span>お気軽にご相談ください。</span></p>
         <div class="sl_btn"><a href="<?php echo home_url(); ?>/contact/">ご相談予約はこちら</a></div>
       </section>
