@@ -112,10 +112,10 @@
   <section class="footer_last">
     <div class="footer_last_inr">
       <ul>
-        <li><a href="http://toyama-venture.com/" target="_blank">北陸ベンチャーハック</a></li>
-        <li><a href="http://is-consulting.jp/" target="_blank">I’s Consulting,Inc</a></li>
+        <li><a href="https://dynave.jp/" target="_blank">運営会社：Dynave,lnc.</a></li>
+        <li><a href="tel:0762995485">電話相談窓口：076-299-5485</a></li>
       </ul>
-      <p>Copyright ©金沢ホームページ制作.COM All Rights Reserved.</p>
+      <p>Copyright ©福井ホームページ制作.COM All Rights Reserved.</p>
     </div>
   </section>
   </footer>
