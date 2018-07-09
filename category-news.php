@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 <div id="<?php echo get_page($wp_query->post->ID)->post_name; ?>" class="main">
  <section class="m_ttlArea_1">

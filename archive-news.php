@@ -1,4 +1,3 @@
-
 <?php get_header(); ?>
   <?php include_once("nav.php"); ?>
   <section class="m_ttlArea_1">
